@@ -2251,6 +2251,7 @@ dl:after,
   top:0;
   background:url(images/tint.png);
   width:100%;
+  z-index:39;
 }
 
 .popup {
