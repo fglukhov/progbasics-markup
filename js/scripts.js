@@ -486,10 +486,10 @@ jQuery.extend(jQuery.validator.messages, {
         curIndex = parseInt(slider.find(".slide-act").prevAll(".slide").length)
         if (curIndex < sliderSize-1) {
           curIndex++;
-          $(".slide-act").hide().removeClass("slide-act");
+          slider.find(".slide-act").hide().removeClass("slide-act");
           slides.eq(curIndex).fadeIn(250).addClass("slide-act");
         } else {
-          $(".slide-act").hide().removeClass("slide-act");
+          slider.find(".slide-act").hide().removeClass("slide-act");
           slides.eq(0).fadeIn(250).addClass("slide-act");
         }
       });
@@ -498,10 +498,10 @@ jQuery.extend(jQuery.validator.messages, {
         curIndex = parseInt(slider.find(".slide-act").prevAll(".slide").length)
         if (curIndex > 0) {
           curIndex--;
-          $(".slide-act").hide().removeClass("slide-act");
+          slider.find(".slide-act").hide().removeClass("slide-act");
           slides.eq(curIndex).fadeIn(250).addClass("slide-act");
         } else {
-          $(".slide-act").hide().removeClass("slide-act");
+          slider.find(".slide-act").hide().removeClass("slide-act");
           slides.eq(slides.length-1).fadeIn(250).addClass("slide-act");
         }
       });
