@@ -1,0 +1,1772 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Основы программирования</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" href="css/cssreset-min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/cssfonts-min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.4.custom.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="js/jquery.countdown-ru.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="js/masked.input.js"></script>
+<script type="text/javascript" src="js/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery.swfobject.js"></script>
+<script type="text/javascript" src="js/youTubeEmbed-jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.transit.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</head>
+
+<body>
+
+<div class="top-wrap">
+
+  <div class="top-main">
+    
+    <div class="header">
+     <div class="header-top">
+        <div class="center-wrapper">
+      		<div class="fc">
+      			<div class="header-phone">
+      			  8 (800) 775-41-89
+      			  <span>По России звонок бесплатный</span>
+      			</div>
+      			<div class="site-ttl">
+      			  <div class="site-ttl-l">
+      			    Центр компьютерного<br />
+      			    обучения
+      			  </div>
+      			  <div class="logo">
+      			    <img src="images/logo.png" alt=""/>
+      			  </div>
+      			  <div class="site-ttl-r">
+      			    Школа<br />
+      			    программирования
+      			  </div>
+      			</div>
+      			<div class="header-button">
+      			  <div class="button" onclick="openPopup('signPopup')">Записаться</div>
+      			</div>
+      		</div>
+      		<div class="site-name">
+      		  <div class="site-name-cat">
+      		    Онлайн-курс
+      		  </div>
+      		  <div class="site-name-name">
+      		    Основы программирования
+      		  </div>
+      		</div>
+      	</div>
+      </div>
+      <div class="main-menu-wrapper fc">
+        <div class="center-wrapper">
+        	<ul class="main-menu">
+        	  <li><a href="#about">О курсе</a></li>
+        	  <li><a href="#unique">Уникальность</a></li>
+        	  <li><a href="#program">Программа</a></li>
+        	  <li><a href="#how">Как проходят занятия</a></li>
+        	  <li><a href="#teachers">Преподаватели</a></li>
+        	  <li><a href="#success">Истории успеха</a></li>
+        	</ul>
+        </div>
+      </div>
+      
+      <div class="fixed-menu">
+      	<div class="main-menu-wrapper fc">
+      	  <div class="center-wrapper">
+            <div class="logo-fixed">
+              <a href="#"><img src="images/logo.png"/></a>
+            </div>
+      	    <ul class="main-menu">
+      	      <li><a href="#about">О курсе</a></li>
+              <li><a href="#unique">Уникальность</a></li>
+              <li><a href="#program">Программа</a></li>
+              <li><a href="#how">Как проходят занятия</a></li>
+              <li><a href="#teachers">Преподаватели</a></li>
+              <li><a href="#success">Истории успеха</a></li>
+      	    </ul>
+            <div class="header-button">
+      			  <div class="button" onclick="openPopup('signPopup')">Записаться</div>
+      			</div>
+      	  </div>
+      	</div>
+      </div>
+      
+    </div>
+    
+    <div class="body">
+      
+      <div class="main-slider">
+        <div class="slides">
+          <div class="slide slide-1">
+            <div class="center-wrapper">
+            	<div class="pic">
+            	  <img src="images/slide-1-pic.png" />
+            	</div>
+            	<div class="descr">
+            	  <div class="cont">
+            	  	<h2>Обучение с нуля</h2>
+            	  	<p>Предварительной подготовки не требуется.<br />Начните профессиональное развитие прямо сегодня!</p>
+            	  </div>
+            	</div>
+            </div>
+          </div>
+          <div class="slide slide-2">
+            <div class="center-wrapper">
+            	<div class="pic">
+            	  <img src="images/slide-2-pic.png" />
+            	</div>
+            	<div class="descr">
+            	  <div class="cont">
+            	  	<h2>Домашние задания</h2>
+            	  	<p>Специально разработанная система домашних<br />заданий для эффективного закрепления материала.</p>
+            	  </div>
+            	</div>
+            </div>
+          </div>
+          <div class="slide slide-3">
+            <div class="center-wrapper">
+            	<div class="pic">
+            	  <img src="images/slide-3-pic.png" />
+            	</div>
+            	<div class="descr">
+            	  <div class="cont">
+            	  	<h2>2 недели занятий</h2>
+            	  	<p>Опытный преподаватель будет поддерживать<br />вас и отвечать на ваши вопросы<br />на протяжении всего курса</p>
+            	  </div>
+            	</div>
+            </div>
+          </div>
+          <div class="slide slide-4">
+            <div class="center-wrapper">
+            	<div class="pic">
+            	  <img src="images/slide-4-pic.png" />
+            	</div>
+            	<div class="descr">
+            	  <div class="cont">
+            	  	<h2>4 онлайн урока +<br />5 видеолекций</h2>
+            	  	<p>Огромный объем уникальной авторской<br />информации для начинающего программиста</p>
+            	  </div>
+            	</div>
+            </div>
+          </div>
+          <div class="slide slide-5">
+            <div class="center-wrapper">
+            	<div class="pic">
+            	  <img src="images/slide-5-pic.png" />
+            	</div>
+            	<div class="descr">
+            	  <div class="cont">
+            	  	<h2>Пособия + записи<br />лекций</h2>
+            	  	<p>Вы сможете скачать все материалы курса<br />для повторного изучения в удобное время.</p>
+            	  </div>
+            	</div>
+            </div>
+          </div>
+        </div>
+        <div class="lister fc">
+          <div class="center-wrapper">
+          	<div class="lister-cont">
+          		<div class="item"><div class="cont">Обучение с нуля</div></div>
+          		<div class="item"><div class="cont">2 недели занятий</div></div>
+          		<div class="item"><div class="cont">4 онлайн урока<br />+ 5 видео лекций</div></div>
+          		<div class="item"><div class="cont">Домашние задания</div></div>
+          		<div class="item"><div class="cont">Пособия + записи лекций</div></div>
+          	</div>
+          </div>
+        </div>
+      </div>
+      
+      <a name="about"></a>
+      
+      <div class="what-gives-block">
+        <div class="center-wrapper">
+          
+          <div class="fc">
+            <div class="what-gives-descr">
+              <h2>Что дает курс?</h2>
+              <div class="what-gives-cols fc">
+              	<div class="what-gives-items">
+              	  <div class="item">
+              	    Возможность попробовать новую профессию
+              	  </div>
+              	  <div class="item">
+              	    Получить, систематизировать и упорядочить базовые знания
+              	  </div>
+              	  <div class="item">
+              	    Пройти полный курс обучения и получить престижную работу
+              	  </div>
+              	  <div class="item">
+              	    Изменить свою жизнь и начать заниматься тем, что интересно
+              	  </div>
+              	</div>
+              	<div class="what-gives-items">
+              	  <div class="item">
+              	    Повысить<br />квалификацию
+              	  </div>
+              	  <div class="item">
+              	    Попасть в круг единомышленников, задавать вопросы, общаться
+              	  </div>
+              	  <div class="item">
+              	    Пройти полный курс обучения и попасть на стажировку в реальный<br />ИТ-проект
+              	  </div>
+              	</div>
+              </div>
+              <div class="socbuttons">
+                <!-- AddThis Button BEGIN -->
+                <div class="addthis_toolbox addthis_default_style">
+                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                <a class="addthis_button_tweet"></a>
+                <a class="addthis_counter addthis_pill_style"></a>
+                </div>
+                <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521e35c26e2f9151"></script>
+                <!-- AddThis Button END -->
+              </div>
+            </div>
+            <div class="common-form sign-form">
+              <div class="sign-form-ttl">
+                <h2>Записывайтесь!</h2>
+                Начало занятий: 13 декабря
+              </div>
+              <div class="sign-form-cont">
+                <div class="sign-form-badge">
+                  <div class="cont"><span>100%</span><br />
+                  	гарантия<br />возврата денег</div>
+                </div>
+                <div class="sign-form-price">
+                  <span class="price-new tooltip-custom tooltip-l" rel="price_new_tooltip">970<span>руб.</span></span>
+                  <span class="price-old">
+                    2 350 руб.
+                  </span>
+                  <div class="tooltip-content" rel="price_new_tooltip">
+                    <h3>Вы не теряете эту сумму!</h3>
+                    <p>970 рублей будут начислены на внутренний счет ученика “Школы программирования” и будут доступны для оплаты любых дополнительных учебных продуктов центра!</p>
+                  </div>
+                </div>
+              	<form action=".">
+              	  <div class="form-item errors-left">
+                    <label class="placeholder" for="sign_1_name">Ваше имя</label>
+                    <input type="text" class="form-text" name="sign_1_name" id="sign_1_name" required />
+                  </div>
+                  <div class="form-item errors-left">
+                    <label class="placeholder" for="sign_1_phone">Телефон</label>
+                    <input type="text" class="form-text form-phone" name="sign_1_phone" id="sign_1_phone" required />
+                  </div>
+                  <div class="form-item errors-left">
+                    <label class="placeholder" for="sign_1_email">E-mail</label>
+                    <input type="text" class="form-text form-email" name="sign_1_email" id="sign_1_email" required />
+                  </div>
+                  <input type="submit" value="Записаться" class="form-submit button"/>
+                  <div class="form-hint">
+                  	<span class="tooltip-custom tooltip-l" rel="confidential_tooltip">Политика конфиденциальности</span>
+                  </div>
+                  <div class="tooltip-content" rel="confidential_tooltip">
+                    <h3>Политика конфиденциальности</h3>
+                    <p>Интернет-сайт http://progbasics.ru (далее - Сайт) уважает ваше право и соблюдает конфиденциальность при заполнении, передачи и хранении ваших конфиденциальных сведений.</p>
+                    <p>Размещение заявки на Сайте означает Ваше согласие на обработку данных и дальнейшей передачи ваших контактных данных ООО "Школа программирования".</p>
+                    <p>Под персональными данными подразумевается информация, относящаяся к субъекту персональных данных, в частности фамилия и имя, телефон, адрес электронной почты и иные данные, относимые Федеральным законом от 27 июля 2006 года № 152-ФЗ «О персональных данных» (далее – «Закон») к категории персональных данных.Целью обработки персональных данных является оказание Сайтом информационно-справочных услуг, а также информирование о курсах ООО "Школа программирования".</p> 
+                    <p>В случае отзыва согласия на обработку своих персональных данных мы обязуемся удалить Ваши персональные данные в срок не позднее 3 рабочих дней. Отзыв согласия можно отправить в электронном виде по адресу: support@prog-school.ru.</p> 
+                  </div>
+              	</form>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="blockquote-block">
+        <div class="center-wrapper">
+          <div class="blockquote-block-content">
+            <blockquote>
+              <div class="cont">
+              	<p>Мы полностью <strong>уверены в качестве нашего курса</strong>, поэтому предлагаем обучение на уникальных условиях:</p>
+              	<p><strong>970 рублей будут зачислены на внутренний счет</strong> ученика центра «Школа Программирования» и будут доступны для оплаты любых дополнительных учебных продуктов центра.</p>
+              </div>
+              <div class="blockquote-footer">
+                Александр Никитин,
+                <div class="post">Основатель учебного центра «Школа программирования»</div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      
+      <div class="stats-block">
+        <div class="center-wrapper">
+          <div class="stats-items">
+            <div class="stats-item stats-item-1">
+              <div class="num">
+                <img src="images/stats-num-1.png"/>
+              </div>
+              <div class="descr">
+                Учеников уже научились<br />
+                программировать
+              </div>
+            </div>
+            <div class="stats-item stats-item-2">
+              <div class="num">
+                <img src="images/stats-num-2.png"/>
+              </div>
+              <div class="descr">
+                В 5 раз увеличилось<br />
+                количество наших<br />
+                учеников за 2013 год
+              </div>
+            </div>
+            <div class="stats-item stats-item-3">
+              <div class="num">
+                <img src="images/stats-num-3.png"/>
+              </div>
+              <div class="descr">
+                Учеников оценивают курс<br />
+                на "отлично" и "хорошо"
+              </div>
+            </div>
+            <div class="stats-item stats-item-4">
+              <div class="num">
+                <img src="images/stats-num-4.png"/>
+              </div>
+              <div class="descr">
+                Учеников продолжают<br />
+                обучение у нас дальше
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <a name="unique"></a>
+      
+      <div class="what-unique-block">
+        <div class="center-wrapper">
+      	  <h2>
+      	    Что же такого уникального<br />
+      	    <span>в нашем курсе?</span>
+      	  </h2>
+      	  <div class="what-unique-cols fc">
+      	    <div class="what-unique-col">
+      	      <div class="what-unique-item fc">
+      	        <div class="pic">
+      	          <div class="ico ico-unique-1"></div>
+      	        </div>
+      	        <div class="descr">
+      	          <h3>Предварительное тестирование</h3>
+      	          <p>Мы проводим предварительное тестирование, чтобы формировать учебные группы со студентами одинакового уровня знаний.</p>
+      	        </div>
+      	      </div>
+      	      <div class="what-unique-item fc">
+      	        <div class="pic">
+      	          <div class="ico ico-unique-2"></div>
+      	        </div>
+      	        <div class="descr">
+      	          <h3>Теория и практика</h3>
+      	          <p>Не только теория, но и множество интересных практических заданий.</p>
+      	        </div>
+      	      </div>
+      	      <div class="what-unique-item fc">
+      	        <div class="pic">
+      	          <div class="ico ico-unique-3"></div>
+      	        </div>
+      	        <div class="descr">
+      	          <h3>Методические пособия</h3>
+      	          <p>Вы получаете видеозаписи лекций и методические пособия, поэтому у вас всегда будет возможность прослушать лекцию повторно.</p>
+      	        </div>
+      	      </div>
+      	    </div>
+      	    <div class="what-unique-col">
+      	      <div class="what-unique-item fc">
+      	        <div class="pic">
+      	          <div class="ico ico-unique-4"></div>
+      	        </div>
+      	        <div class="descr">
+      	          <h3>Индивидуальные рекомендации</h3>
+      	          <p>Подробный разбор домашних заданий, индивидуальные рекомендации.</p>
+      	        </div>
+      	      </div>
+      	      <div class="what-unique-item fc">
+      	        <div class="pic">
+      	          <div class="ico ico-unique-5"></div>
+      	        </div>
+      	        <div class="descr">
+      	          <h3>Сертификат об окончании</h3>
+      	          <p>Вы получите сертификат об окончании курсов, подтверждающий уровень знаний.</p>
+      	        </div>
+      	      </div>
+      	      <div class="what-unique-item fc">
+      	        <div class="pic">
+      	          <div class="ico ico-unique-6"></div>
+      	        </div>
+      	        <div class="descr">
+      	          <h3>Обучение и стажировка</h3>
+      	          <p>Дальнейшее углубленное обучение по выбранной специальности и стажировка ведущих ИТ-компаниях.</p>
+      	        </div>
+      	      </div>
+      	    </div>
+      	  </div>
+      	</div>
+      </div>
+      
+      <a name="program"></a>
+      
+      <div class="program-block">
+        <div class="center-wrapper">
+          <h2>Программа курса</h2>
+          <div class="program-calendar fc">
+            <div class="program-calendar-item" rel="course-program-1">
+              <div class="pc-day-ttl">
+                Урок №1
+              </div>
+              <div class="pc-day-num">
+                09
+                <span>декабря</span>
+              </div>
+            </div>
+            <div class="program-calendar-item" rel="course-program-2">
+              <div class="pc-day-ttl">
+                Урок №2
+              </div>
+              <div class="pc-day-num">
+                10
+                <span>декабря</span>
+              </div>
+            </div>
+            <div class="program-calendar-item program-calendar-item-video" rel="course-program-3">
+              <div class="pc-day-ttl">
+                Видеолекция
+              </div>
+              <div class="pc-day-num">
+                11
+                <span>декабря</span>
+              </div>
+            </div>
+            <div class="program-calendar-item program-calendar-item-video" rel="course-program-4">
+              <div class="pc-day-ttl">
+                Видеолекция
+              </div>
+              <div class="pc-day-num">
+                12
+                <span>декабря</span>
+              </div>
+            </div>
+            <div class="program-calendar-item" rel="course-program-5">
+              <div class="pc-day-ttl">
+                Урок №5
+              </div>
+              <div class="pc-day-num">
+                13
+                <span>декабря</span>
+              </div>
+            </div>
+            <div class="program-calendar-sep"></div>
+            <div class="program-calendar-item program-calendar-item-video" rel="course-program-6">
+              <div class="pc-day-ttl">
+                Видеолекция
+              </div>
+              <div class="pc-day-num">
+                16
+                <span>декабря</span>
+              </div>
+            </div>
+            <div class="program-calendar-item program-calendar-item-video" rel="course-program-7">
+              <div class="pc-day-ttl">
+                Видеолекция
+              </div>
+              <div class="pc-day-num">
+                17
+                <span>декабря</span>
+              </div>
+            </div>
+            <div class="program-calendar-item" rel="course-program-8">
+              <div class="pc-day-ttl">
+                Урок №8
+              </div>
+              <div class="pc-day-num">
+                18
+                <span>декабря</span>
+              </div>
+            </div>
+            <div class="program-calendar-item program-calendar-item-video" rel="course-program-9">
+              <div class="pc-day-ttl">
+                Видеолекция
+              </div>
+              <div class="pc-day-num">
+                19
+                <span>декабря</span>
+              </div>
+            </div>
+            <div class="program-calendar-item program-calendar-item-secret" rel="course-program-10">
+              <div class="pc-day-ttl">
+                Секретный день
+              </div>
+              <div class="pc-day-num">
+                20
+                <span>декабря</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="course-descr" rel="course-program-1">
+            <div class="course-descr-ttl fc">
+              <div class="course-descr-pt"></div>
+              <div class="close"></div>
+              <div class="course-descr-name">
+                Урок №1
+              </div>
+              <div class="course-descr-time">
+                с 13:00 до 18:00, перерыв 45 минут
+              </div>
+            </div>
+            <div class="course-descr-content fc">
+              <div class="course-descr-teacher">
+                <h3>Ведущий</h3>
+                <div class="pic">
+                  <img src="files/teacher-userpic.jpg"/>
+                </div>
+                <div class="name">
+                  Ольга<br />Кузнецова
+                </div>
+                <div class="post">
+                  Специалист по маркетингу и продвижению
+                </div>
+              </div>
+              <div class="course-descr-descr">
+              	<h2>Правила разработки мобильных приложений</h2>
+                <ul>
+                  <li>Для чего стоит изучать юзабилити?</li>
+                  <li>Какие применяются методы (примеры)</li>
+                  <li>Как с помощью юзабилити не снижая цены можно повысить продажи (примеры)</li>
+                </ul>
+                <h3>Дополнительные материалы:</h3>
+                <div class="course-descr-materials">
+                  <span class="materials-item">
+                    <img src="images/ico-record.png" />Запись урока
+                  </span>
+                  <span class="materials-item">
+                    <img src="images/ico-manual.png" />Методичка
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="course-descr" rel="course-program-2">
+            <div class="course-descr-ttl fc">
+              <div class="course-descr-pt"></div>
+              <div class="close"></div>
+              <div class="course-descr-name">
+                Урок №2
+              </div>
+              <div class="course-descr-time">
+                с 13:00 до 18:00, перерыв 45 минут
+              </div>
+            </div>
+            <div class="course-descr-content fc">
+              <div class="course-descr-teacher">
+                <h3>Ведущий</h3>
+                <div class="pic">
+                  <img src="files/teacher-userpic.jpg"/>
+                </div>
+                <div class="name">
+                  Ольга<br />Кузнецова
+                </div>
+                <div class="post">
+                  Специалист по маркетингу и продвижению
+                </div>
+              </div>
+              <div class="course-descr-descr">
+              	<h2>Правила разработки мобильных приложений</h2>
+                <ul>
+                  <li>Для чего стоит изучать юзабилити?</li>
+                  <li>Какие применяются методы (примеры)</li>
+                  <li>Чего не стоит делать в интерфейсах? (Ошибки, примеры)</li>
+                  <li>Примеры результатов некоторых тестов</li>
+                  <li>Как с помощью юзабилити не снижая цены можно повысить продажи (примеры)</li>
+                </ul>
+                <h3>Дополнительные материалы:</h3>
+                <div class="course-descr-materials">
+                  <span class="materials-item">
+                    <img src="images/ico-record.png" />Запись урока
+                  </span>
+                  <span class="materials-item">
+                    <img src="images/ico-manual.png" />Методичка
+                  </span>
+                  <span class="materials-item">
+                    <img src="images/ico-homework.png" />Домашнее задание
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="course-descr" rel="course-program-3">
+            <div class="course-descr-ttl fc">
+              <div class="course-descr-pt"></div>
+              <div class="close"></div>
+              <div class="course-descr-name">
+                Видеолекция
+              </div>
+              <div class="course-descr-time">
+                с 13:00 до 18:00, перерыв 45 минут
+              </div>
+            </div>
+            <div class="course-descr-content fc">
+              <div class="course-descr-teacher">
+                <h3>Ведущий</h3>
+                <div class="pic">
+                  <img src="files/teacher-userpic.jpg"/>
+                </div>
+                <div class="name">
+                  Ольга<br />Кузнецова
+                </div>
+                <div class="post">
+                  Специалист по маркетингу и продвижению
+                </div>
+              </div>
+              <div class="course-descr-descr">
+              	<h2>Правила разработки мобильных приложений</h2>
+                <ul>
+                  <li>Для чего стоит изучать юзабилити?</li>
+                  <li>Какие применяются методы (примеры)</li>
+                  <li>Чего не стоит делать в интерфейсах? (Ошибки, примеры)</li>
+                  <li>Примеры результатов некоторых тестов</li>
+                  <li>Как с помощью юзабилити не снижая цены можно повысить продажи (примеры)</li>
+                </ul>
+                <h3>Дополнительные материалы:</h3>
+                <div class="course-descr-materials">
+                  <span class="materials-item">
+                    <img src="images/ico-record.png" />Запись урока
+                  </span>
+                  <span class="materials-item">
+                    <img src="images/ico-manual.png" />Методичка
+                  </span>
+                  <span class="materials-item">
+                    <img src="images/ico-homework.png" />Домашнее задание
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="course-descr" rel="course-program-4">
+            <div class="course-descr-ttl fc">
+              <div class="course-descr-pt"></div>
+              <div class="close"></div>
+              <div class="course-descr-name">
+                Видеолекция
+              </div>
+              <div class="course-descr-time">
+                с 13:00 до 18:00, перерыв 45 минут
+              </div>
+            </div>
+            <div class="course-descr-content fc">
+              <div class="course-descr-teacher">
+                <h3>Ведущий</h3>
+                <div class="pic">
+                  <img src="files/teacher-userpic.jpg"/>
+                </div>
+                <div class="name">
+                  Ольга<br />Кузнецова
+                </div>
+                <div class="post">
+                  Специалист по маркетингу и продвижению
+                </div>
+              </div>
+              <div class="course-descr-descr">
+              	<h2>Правила разработки мобильных приложений</h2>
+                <ul>
+                  <li>Для чего стоит изучать юзабилити?</li>
+                  <li>Какие применяются методы (примеры)</li>
+                  <li>Чего не стоит делать в интерфейсах? (Ошибки, примеры)</li>
+                  <li>Примеры результатов некоторых тестов</li>
+                  <li>Как с помощью юзабилити не снижая цены можно повысить продажи (примеры)</li>
+                </ul>
+                <h3>Дополнительные материалы:</h3>
+                <div class="course-descr-materials">
+                  <span class="materials-item">
+                    <img src="images/ico-record.png" />Запись урока
+                  </span>
+                  <span class="materials-item">
+                    <img src="images/ico-manual.png" />Методичка
+                  </span>
+                  <span class="materials-item">
+                    <img src="images/ico-homework.png" />Домашнее задание
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="course-descr" rel="course-program-5">
+            <div class="course-descr-ttl fc">
+              <div class="course-descr-pt"></div>
+              <div class="close"></div>
+              <div class="course-descr-name">
+                Урок №5
+              </div>
+              <div class="course-descr-time">
+                с 13:00 до 18:00, перерыв 45 минут
+              </div>
+            </div>
+            <div class="course-descr-content fc">
+              <div class="course-descr-teacher">
+                <h3>Ведущий</h3>
+                <div class="pic">
+                  <img src="files/teacher-userpic.jpg"/>
+                </div>
+                <div class="name">
+                  Ольга<br />Кузнецова
+                </div>
+                <div class="post">
+                  Специалист по маркетингу и продвижению
+                </div>
+              </div>
+              <div class="course-descr-descr">
+              	<h2>Правила разработки мобильных приложений</h2>
+                <ul>
+                  <li>Для чего стоит изучать юзабилити?</li>
+                  <li>Какие применяются методы (примеры)</li>
+                  <li>Чего не стоит делать в интерфейсах? (Ошибки, примеры)</li>
+                </ul>
+                <h3>Дополнительные материалы:</h3>
+                <div class="course-descr-materials">
+                  <span class="materials-item">
+                    <img src="images/ico-record.png" />Запись урока
+                  </span>
+                  <span class="materials-item">
+                    <img src="images/ico-manual.png" />Методичка
+                  </span>
+                  <span class="materials-item">
+                    <img src="images/ico-homework.png" />Домашнее задание
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="course-descr" rel="course-program-6">
+            <div class="course-descr-ttl fc">
+              <div class="course-descr-pt"></div>
+              <div class="close"></div>
+              <div class="course-descr-name">
+                Видеолекция
+              </div>
+              <div class="course-descr-time">
+                с 13:00 до 18:00, перерыв 45 минут
+              </div>
+            </div>
+            <div class="course-descr-content fc">
+              <div class="course-descr-teacher">
+                <h3>Ведущий</h3>
+                <div class="pic">
+                  <img src="files/teacher-userpic.jpg"/>
+                </div>
+                <div class="name">
+                  Ольга<br />Кузнецова
+                </div>
+                <div class="post">
+                  Специалист по маркетингу и продвижению
+                </div>
+              </div>
+              <div class="course-descr-descr">
+              	<h2>Правила разработки мобильных приложений</h2>
+                <ul>
+                  <li>Для чего стоит изучать юзабилити?</li>
+                  <li>Какие применяются методы (примеры)</li>
+                  <li>Чего не стоит делать в интерфейсах? (Ошибки, примеры)</li>
+                  <li>Примеры результатов некоторых тестов</li>
+                  <li>Как с помощью юзабилити не снижая цены можно повысить продажи (примеры)</li>
+                </ul>
+                <h3>Дополнительные материалы:</h3>
+                <div class="course-descr-materials">
+                  <span class="materials-item">
+                    <img src="images/ico-record.png" />Запись урока
+                  </span>
+                  <span class="materials-item">
+                    <img src="images/ico-manual.png" />Методичка
+                  </span>
+                  <span class="materials-item">
+                    <img src="images/ico-homework.png" />Домашнее задание
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="course-descr" rel="course-program-7">
+            <div class="course-descr-ttl fc">
+              <div class="course-descr-pt"></div>
+              <div class="close"></div>
+              <div class="course-descr-name">
+                Видеолекция
+              </div>
+              <div class="course-descr-time">
+                с 13:00 до 18:00, перерыв 45 минут
+              </div>
+            </div>
+            <div class="course-descr-content fc">
+              <div class="course-descr-teacher">
+                <h3>Ведущий</h3>
+                <div class="pic">
+                  <img src="files/teacher-userpic.jpg"/>
+                </div>
+                <div class="name">
+                  Ольга<br />Кузнецова
+                </div>
+                <div class="post">
+                  Специалист по маркетингу и продвижению
+                </div>
+              </div>
+              <div class="course-descr-descr">
+              	<h2>Правила разработки мобильных приложений</h2>
+                <ul>
+                  <li>Для чего стоит изучать юзабилити?</li>
+                  <li>Какие применяются методы (примеры)</li>
+                  <li>Чего не стоит делать в интерфейсах? (Ошибки, примеры)</li>
+                  <li>Примеры результатов некоторых тестов</li>
+                  <li>Как с помощью юзабилити не снижая цены можно повысить продажи (примеры)</li>
+                </ul>
+                <h3>Дополнительные материалы:</h3>
+                <div class="course-descr-materials">
+                  <span class="materials-item">
+                    <img src="images/ico-record.png" />Запись урока
+                  </span>
+                  <span class="materials-item">
+                    <img src="images/ico-manual.png" />Методичка
+                  </span>
+                  <span class="materials-item">
+                    <img src="images/ico-homework.png" />Домашнее задание
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="course-descr" rel="course-program-8">
+            <div class="course-descr-ttl fc">
+              <div class="course-descr-pt"></div>
+              <div class="close"></div>
+              <div class="course-descr-name">
+                Урок №8
+              </div>
+              <div class="course-descr-time">
+                с 13:00 до 18:00, перерыв 45 минут
+              </div>
+            </div>
+            <div class="course-descr-content fc">
+              <div class="course-descr-teacher">
+                <h3>Ведущий</h3>
+                <div class="pic">
+                  <img src="files/teacher-userpic.jpg"/>
+                </div>
+                <div class="name">
+                  Ольга<br />Кузнецова
+                </div>
+                <div class="post">
+                  Специалист по маркетингу и продвижению
+                </div>
+              </div>
+              <div class="course-descr-descr">
+              	<h2>Правила разработки мобильных приложений</h2>
+                <ul>
+                  <li>Для чего стоит изучать юзабилити?</li>
+                  <li>Какие применяются методы (примеры)</li>
+                  <li>Чего не стоит делать в интерфейсах? (Ошибки, примеры)</li>
+                  <li>Примеры результатов некоторых тестов</li>
+                  <li>Как с помощью юзабилити не снижая цены можно повысить продажи (примеры)</li>
+                </ul>
+                <h3>Дополнительные материалы:</h3>
+                <div class="course-descr-materials">
+                  <span class="materials-item">
+                    <img src="images/ico-record.png" />Запись урока
+                  </span>
+                  <span class="materials-item">
+                    <img src="images/ico-manual.png" />Методичка
+                  </span>
+                  <span class="materials-item">
+                    <img src="images/ico-homework.png" />Домашнее задание
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="course-descr" rel="course-program-9">
+            <div class="course-descr-ttl fc">
+              <div class="course-descr-pt"></div>
+              <div class="close"></div>
+              <div class="course-descr-name">
+                Видеолекция
+              </div>
+              <div class="course-descr-time">
+                с 13:00 до 18:00, перерыв 45 минут
+              </div>
+            </div>
+            <div class="course-descr-content fc">
+              <div class="course-descr-teacher">
+                <h3>Ведущий</h3>
+                <div class="pic">
+                  <img src="files/teacher-userpic.jpg"/>
+                </div>
+                <div class="name">
+                  Ольга<br />Кузнецова
+                </div>
+                <div class="post">
+                  Специалист по маркетингу и продвижению
+                </div>
+              </div>
+              <div class="course-descr-descr">
+              	<h2>Правила разработки мобильных приложений</h2>
+                <ul>
+                  <li>Для чего стоит изучать юзабилити?</li>
+                  <li>Какие применяются методы (примеры)</li>
+                  <li>Чего не стоит делать в интерфейсах? (Ошибки, примеры)</li>
+                  <li>Примеры результатов некоторых тестов</li>
+                  <li>Как с помощью юзабилити не снижая цены можно повысить продажи (примеры)</li>
+                </ul>
+                <h3>Дополнительные материалы:</h3>
+                <div class="course-descr-materials">
+                  <span class="materials-item">
+                    <img src="images/ico-record.png" />Запись урока
+                  </span>
+                  <span class="materials-item">
+                    <img src="images/ico-manual.png" />Методичка
+                  </span>
+                  <span class="materials-item">
+                    <img src="images/ico-homework.png" />Домашнее задание
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="course-descr" rel="course-program-10">
+            <div class="course-descr-ttl fc">
+              <div class="course-descr-pt"></div>
+              <div class="close"></div>
+              <div class="course-descr-name">
+                Секретный день
+              </div>
+              <div class="course-descr-time">
+                с 13:00 до 18:00, перерыв 45 минут
+              </div>
+            </div>
+            <div class="course-descr-content fc">
+              <div class="course-descr-teacher">
+                <h3>Ведущий</h3>
+                <div class="pic">
+                  <img src="files/teacher-userpic.jpg"/>
+                </div>
+                <div class="name">
+                  Ольга<br />Кузнецова
+                </div>
+                <div class="post">
+                  Специалист по маркетингу и продвижению
+                </div>
+              </div>
+              <div class="course-descr-descr">
+              	<h2>Правила разработки мобильных приложений</h2>
+                <ul>
+                  <li>Для чего стоит изучать юзабилити?</li>
+                  <li>Какие применяются методы (примеры)</li>
+                  <li>Чего не стоит делать в интерфейсах? (Ошибки, примеры)</li>
+                  <li>Примеры результатов некоторых тестов</li>
+                  <li>Как с помощью юзабилити не снижая цены можно повысить продажи (примеры)</li>
+                </ul>
+                <h3>Дополнительные материалы:</h3>
+                <div class="course-descr-materials">
+                  <span class="materials-item">
+                    <img src="images/ico-record.png" />Запись урока
+                  </span>
+                  <span class="materials-item">
+                    <img src="images/ico-manual.png" />Методичка
+                  </span>
+                  <span class="materials-item">
+                    <img src="images/ico-homework.png" />Домашнее задание
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="way-block">
+        <div class="center-wrapper">
+          <div class="way-block-content">
+            <div class="ico-novice"></div>
+            <div class="ico-guru"></div>
+            
+            <div class="way-tooltips">
+            	<div class="tooltip-popup tooltip-popup-t way-tooltip-popup" id="way-tooltip-1" style="display:block;">
+            	  <div class="tooltip-cont">
+            	    <p>Вы записались на курс "Основы программирования"</p>
+            	  </div>
+            	</div>
+            	
+            	<div class="tooltip-popup tooltip-popup-t way-tooltip-popup" id="way-tooltip-2">
+            	  <div class="tooltip-cont">
+            	    <p>После курса у Вас будут базовые навыки программирования</p>
+            	  </div>
+            	</div>
+            	
+            	<div class="tooltip-popup tooltip-popup-t way-tooltip-popup" id="way-tooltip-3">
+            	  <div class="tooltip-cont">
+            	    <p>Теперь вы сможете выбрать обучение по конкретной профессии: веб-программист, разработчик мобильных приложений или же создатель компьютерных приложений</p>
+            	  </div>
+            	</div>
+            	
+            	<div class="tooltip-popup tooltip-popup-t way-tooltip-popup" id="way-tooltip-4">
+            	  <div class="tooltip-cont">
+            	    <p>Начинайте стажировку в компаниях-партнерах ШП еще во время обучения</p>
+            	  </div>
+            	</div>
+            	
+            	<div class="tooltip-popup tooltip-popup-t way-tooltip-popup" id="way-tooltip-5">
+            	  <div class="tooltip-cont">
+            	    <p>Получите сертификат выпускника</p>
+            	  </div>
+            	</div>
+            	
+            	<div class="tooltip-popup tooltip-popup-t way-tooltip-popup" id="way-tooltip-6">
+            	  <div class="tooltip-cont">
+            	    <p>Продолжайте работать над текущим проектом или трудоустройтесь в компанию мечты уже с готовым портфолио и оптытом реальной разработки</p>
+            	  </div>
+            	</div>
+            </div>
+            
+            <div class="move-slider-hint">
+              двигай<br />ползунок!
+            </div>
+            
+            <div class="way-slider-wrapper">
+              <div id="way-slider"></div>
+            </div>
+            
+            <h3>Познай путь программиста!</h3>
+            
+          </div>
+        </div>
+      </div>
+      
+      <a name="how"></a>
+      
+      <div class="how-block">
+        <div class="how-block-top">
+          <div class="center-wrapper">
+          	<h2>Как проходят занятия</h2>
+          	<div class="lead">
+          	  <p>Уникальная технология трансляции уроков через интернет делает удаленное обучение таким же удобным, как очное присутствие.</p>
+          	</div>
+          	<div class="how-notebook">
+              
+              <div class="v-cont v-cont-initial"></div>
+          	  <div class="controlDiv controlDiv1" vid="//www.youtube.com/embed/45oJFpUKqCk" rel="v_iframe_1"></div>  
+            
+          	  <div class="notebook-hint-trigger notebook-hint-trigger-1 tooltip-custom tooltip-b" rel="notebook_hint_1"></div>
+          	  <div class="notebook-hint-trigger notebook-hint-trigger-2 tooltip-custom tooltip-r" rel="notebook_hint_2"></div>
+          	  <div class="notebook-hint-trigger notebook-hint-trigger-3 tooltip-custom tooltip-t" rel="notebook_hint_3"></div>
+          	  <div class="tooltip-content" rel="notebook_hint_1">
+          	    <p>Во время проведения занятий в реальном классе вы подключаетесь через интернет к онлайн-трансляции урока, перейдя по специальной ссылке оставленной на форуме ШП.</p>
+          	    <p><img src="files/notebook-hint-pic.png"/></p>
+          	  </div>
+          	  <div class="tooltip-content" rel="notebook_hint_2">
+          	    <p>Вы слышите преподавателя и видите экран его монитора (рабочий стол).</p>
+          	  </div>
+          	  <div class="tooltip-content" rel="notebook_hint_3">
+          	    <p>Вы можете задавать возникающие вопросы в специальный чат. Преподаватель своевременно реагирует на комментарии онлайн-учеников и дает необходимые разъяснения.</p>
+          	  </div>
+          	</div>
+          </div>
+          
+        </div>
+        <div class="how-block-bottom">
+            
+        </div>
+      </div>
+      
+      <div class="about-block">
+        <div class="center-wrapper">
+          <div class="about-cols fc">
+            <div class="about-l">
+              <h3>Об учебном центре</h3>
+              <p>Учебный центр «Школа Программирования» был основан выпускниками МГТУ им. Баумана. C 2010 года учебными программами Школы Программирования воспользовались более 25 000 человек в России, странах СНГ и дальнем зарубежье.</p>
+
+              <p>Цикл занятий по курсу «Основы программирования» подготовлен профессиональными преподавателями учебного центра «Школа Программирования», лидера России на рынке обучения программированию.</p>
+            </div>
+            <div class="about-r">
+              <h3>Программа курса<br />
+                подготовлена совместно<br />
+                с экспертами из ведущих<br />
+                ИТ-компаний:</h3>
+                <div class="about-logos">
+                  <img src="images/logo-kaspersky.png"/>
+                  <img src="images/logo-microsoft.png"/>
+                </div>
+            </div>
+          </div>
+          <div class="about-carousel fc">
+            <ul class="jcarousel">
+              <li><img src="files/about-pic-1.jpg"/></li>
+              <li><img src="files/about-pic-2.jpg"/></li>
+              <li><img src="files/about-pic-3.jpg"/></li>
+              <li><img src="files/about-pic-1.jpg"/></li>
+              <li><img src="files/about-pic-2.jpg"/></li>
+              <li><img src="files/about-pic-3.jpg"/></li>
+              <li><img src="files/about-pic-1.jpg"/></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <a name="teachers"></a>
+      
+      <div class="teachers-block">
+        <div class="center-wrapper">
+        
+          <h2>Наши преподаватели</h2>
+          
+          <div class="lead">
+            <p>Роль преподавателя очень важна в обучении. Вы будете не просто слушать лекции о программировании,<br />
+            но и выполнять после каждого урока домашние задания под чутким руководством<br />
+            опытных преподавателя.</p>
+          </div>
+        
+          <div class="teachers fc">
+            <div class="teachers-item">
+              <div class="pic">
+                <img src="files/teacher-1.jpg"/>
+              </div>
+              <div class="descr">
+                <h3>Дмитрий Лаврик</h3>
+                <p>Под руководством Дмитрия уже более 2000 слушателей курсов получили навыки профессиональной веб-разработки.</p>
+                <ul>
+                  <li>Сертифицированный бизнес-тренер</li>
+                	<li>Международный мастер спорта по шахматам</li>
+                	<li>Профессиональный веб-разработчик, успешный фрилансер, системный архитектор и руководитель ряда интернет-проектов</li>
+                	<li>Постоянный преподаватель Школы Программирования с 2011 года, автор множества курсов и ряда учебных методик</li>
+                </ul>
+              </div>
+            </div>
+            <div class="teachers-item">
+              <div class="pic">
+                <img src="files/teacher-2.jpg"/>
+              </div>
+              <div class="descr">
+                <h3>Андрей Жариков</h3>
+                <p>Андрей умеет просто и понятно донести до слушателей материал любого уровня сложности. Пользуется огромным уважением и признательностью своих учеников.</p>
+                <ul>
+                  <li>Профессиональный веб-разработчик со стажем 10 лет</li>
+                  <li>Прошел путь от рядового программиста в офисе до успешного фрилансера и системного архитектора коммерческих веб-сервисов</li>
+                  <li>Обучил более 1000 учеников техническим основам создания сайтов в интернете</li>
+                  <li>Начиная с 2013 года - постоянный преподаватель Школы Программирования</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <a name="success"></a>
+      
+      <div class="success-reviews-block">
+        <div class="center-wrapper">
+        
+          <h2>Истории успеха</h2>
+          
+          <div class="success-slider">
+            <div class="slides">
+            	<div class="slide">
+            	  <div class="slide-content fc">
+            	    <div class="descr">
+            	      <div class="ttl">
+            	        <div class="ttl-cont">
+            	        	<span>Как работать по 2–4 часа в день и наслаждаться жизнью?</span>
+            	        </div>
+            	      </div>
+            	      <div class="expandable">
+            	        <p>Моё знакомство со школой программирования произошло на последнем курсе университета. Училась я на математика-программиста и на тот момент даже работала в веб-студии неполный рабочий день. Основы программирования я знала хорошо, но меня интересовала веб-разработка, а в университете мы её прошли вскользь, даже не затронув ни один серверный язык. Поэтому я решила учиться сама, нашла кучу книжек по php и закопалась в них.</p>
+            	
+            	        <p>Время шло, какие-то базовые вещи делать я научилась, но шаг в сторону и уже не знаешь как это реализовать, начинаешь искать в интернете. К тому же обучение по книжкам мне никогда не нравилось, почти каждые летние каникулы я давала себе слово, что к новому учебному году подготовлюсь заранее и например, выучу за лето C++. Но проходил месяц ковыряния в книжке и становилось скучно, контролировать тебя некому и учеба забрасывалась. Так же было и с php, до знакомства с ШП я пыталась его выучить три раза, научилась только переделывать готовые примеры.</p>
+            	
+            	        <p>И вот однажды на просторах интернета я наткнулась на книжку "Путь программиста. От 100$ до 10.000$ в месяц", естественно она меня заинтересовала. Так я узнала о ШП и сразу загорелась желанием учиться там. На тот момент уже прошёл живой курс "PHP. Уровень 1. Основы Веб-разработки" и планировался "PHP. Уровень 2. Профессиональная веб-разработка". Я была в восторге от программы этого курса и записалась на него, параллельно заказав видеокурс "PHP за 3 недели". До начала "PHP. Уровень 2" я успела освоить "PHP за 3 недели" и наконец-то почувствовала себя знающим человеком.</p>
+            	
+            	        <p>Манера обучения была идеальной, здесь было всё что нужно: правильная подача материала, задания и контроль их выполнения, соревновательный эффект и главное практика! Когда я проходила "PHP. Уровень 2", я писала диплом, что на самом деле мне очень помогло, т.к. проект был на php. После первого месяца курса я успешно защитилась, нашла работу программистом на полный рабочий день с зарплатой в 2 раза больше предыдущей и продолжила познание вебразработки.</p>
+            	
+            	        <p>Осенью этого же года я проходила курс по личной эффективности от ШП, он заставил меня задуматься о фрилансе и организации труда в целом, появилась смелость общаться с начальством. В последствии я договорилась с начальником о смещении рабочего графика и даже о возможности работать дома.</p>
+            	
+            	        <p>За первый год моей трудовой деятельности в общей сложности зарплата выросла в 5 раз. В дальнейшем я уволилась с прежней работы и теперь работаю на себя с проверенными заказчиками, появлению первых из них я тоже обязана ШП, т.к. меня посоветовали как специалиста. На данный момент я получаю доход равный моему окладу на прежней работе и при этом мне не нужно тратить по три часа на дорогу, сидеть по 8 часов в офисе. Я встаю во сколько хочу, я больше не привязана с жесткому графику с 9 до 6, могу в течение дня сходить в кино или уехать на несколько часов по делам. Чистое время работы занимает от 2х до 4х часов в день, что позволит мне в ближайшем будущем брать дополнительные заказы и увеличить доход ещё в 2 раза.</p>
+            	
+            	        <p>Желаю всем побольше энтузиазма в жизни и профессиональной деятельности!</p>
+            	        
+            	        <h3>Оконченные курсы</h3>
+            	        
+            	        <div class="success-courses">
+            	          "PHP. Уровень 1 - Основы веб-разработки", "PHP. Уровень 2 - Профессиональная веб-разработка" и "Javascript - Интерактивные веб-приложения"
+            	        </div>
+            	        
+            	        <div class="success-collapse">
+            	          <span>Свернуть</span>
+            	        </div>
+            	        
+            	      </div>
+            	    </div>
+            	    <div class="author">
+            	      <div class="pic">
+            	        <img src="files/teacher-userpic.jpg">
+            	      </div>
+            	      <div class="name">
+            	        Екатерина Константинопольская
+            	      </div>
+            	      <div class="post">
+            	        Ростов-на-Дону
+            	      </div>
+            	    </div>
+            	  </div>
+            	</div>
+              <div class="slide">
+            	  <div class="slide-content fc">
+            	    <div class="descr">
+            	      <div class="ttl">
+            	        <div class="ttl-cont">
+            	        	<span>Умножаем зарплату на два</span>
+            	        </div>
+            	      </div>
+            	      <div class="expandable">
+            	        <p>Моё знакомство со школой программирования произошло на последнем курсе университета. Училась я на математика-программиста и на тот момент даже работала в веб-студии неполный рабочий день. Основы программирования я знала хорошо, но меня интересовала веб-разработка, а в университете мы её прошли вскользь, даже не затронув ни один серверный язык. Поэтому я решила учиться сама, нашла кучу книжек по php и закопалась в них.</p>
+            	
+            	        <p>Время шло, какие-то базовые вещи делать я научилась, но шаг в сторону и уже не знаешь как это реализовать, начинаешь искать в интернете. К тому же обучение по книжкам мне никогда не нравилось, почти каждые летние каникулы я давала себе слово, что к новому учебному году подготовлюсь заранее и например, выучу за лето C++. Но проходил месяц ковыряния в книжке и становилось скучно, контролировать тебя некому и учеба забрасывалась. Так же было и с php, до знакомства с ШП я пыталась его выучить три раза, научилась только переделывать готовые примеры.</p>
+            	
+            	        <p>Осенью этого же года я проходила курс по личной эффективности от ШП, он заставил меня задуматься о фрилансе и организации труда в целом, появилась смелость общаться с начальством. В последствии я договорилась с начальником о смещении рабочего графика и даже о возможности работать дома.</p>
+            	
+            	        <p>За первый год моей трудовой деятельности в общей сложности зарплата выросла в 5 раз. В дальнейшем я уволилась с прежней работы и теперь работаю на себя с проверенными заказчиками, появлению первых из них я тоже обязана ШП, т.к. меня посоветовали как специалиста. На данный момент я получаю доход равный моему окладу на прежней работе и при этом мне не нужно тратить по три часа на дорогу, сидеть по 8 часов в офисе. Я встаю во сколько хочу, я больше не привязана с жесткому графику с 9 до 6, могу в течение дня сходить в кино или уехать на несколько часов по делам. Чистое время работы занимает от 2х до 4х часов в день, что позволит мне в ближайшем будущем брать дополнительные заказы и увеличить доход ещё в 2 раза.</p>
+            	
+            	        <p>Желаю всем побольше энтузиазма в жизни и профессиональной деятельности!</p>
+            	        
+            	        <h3>Оконченные курсы</h3>
+            	        
+            	        <div class="success-courses">
+            	          "PHP. Уровень 1 - Основы веб-разработки", "PHP. Уровень 2 - Профессиональная веб-разработка" и "Javascript - Интерактивные веб-приложения"
+            	        </div>
+            	        
+            	        <div class="success-collapse">
+            	          <span>Свернуть</span>
+            	        </div>
+            	        
+            	      </div>
+            	    </div>
+            	    <div class="author">
+            	      <div class="pic">
+            	        <img src="files/teacher-userpic.jpg">
+            	      </div>
+            	      <div class="name">
+            	        Екатерина Константинопольская
+            	      </div>
+            	      <div class="post">
+            	        Ростов-на-Дону
+            	      </div>
+            	    </div>
+            	  </div>
+            	</div>
+              <div class="slide">
+            	  <div class="slide-content fc">
+            	    <div class="descr">
+            	      <div class="ttl">
+            	        <div class="ttl-cont">
+            	        	<span>Полученные знания изменили жизнь и увеличили доход в 3 раза</span>
+            	        </div>
+            	      </div>
+            	      <div class="expandable">
+            	        <p>Моё знакомство со школой программирования произошло на последнем курсе университета. Училась я на математика-программиста и на тот момент даже работала в веб-студии неполный рабочий день. Основы программирования я знала хорошо, но меня интересовала веб-разработка, а в университете мы её прошли вскользь, даже не затронув ни один серверный язык. Поэтому я решила учиться сама, нашла кучу книжек по php и закопалась в них.</p>
+            	
+            	        <p>Осенью этого же года я проходила курс по личной эффективности от ШП, он заставил меня задуматься о фрилансе и организации труда в целом, появилась смелость общаться с начальством. В последствии я договорилась с начальником о смещении рабочего графика и даже о возможности работать дома.</p>
+            	
+            	        <p>За первый год моей трудовой деятельности в общей сложности зарплата выросла в 5 раз. В дальнейшем я уволилась с прежней работы и теперь работаю на себя с проверенными заказчиками, появлению первых из них я тоже обязана ШП, т.к. меня посоветовали как специалиста. На данный момент я получаю доход равный моему окладу на прежней работе и при этом мне не нужно тратить по три часа на дорогу, сидеть по 8 часов в офисе. Я встаю во сколько хочу, я больше не привязана с жесткому графику с 9 до 6, могу в течение дня сходить в кино или уехать на несколько часов по делам. Чистое время работы занимает от 2х до 4х часов в день, что позволит мне в ближайшем будущем брать дополнительные заказы и увеличить доход ещё в 2 раза.</p>
+            	
+            	        <p>Желаю всем побольше энтузиазма в жизни и профессиональной деятельности!</p>
+            	        
+            	        <h3>Оконченные курсы</h3>
+            	        
+            	        <div class="success-courses">
+            	          "PHP. Уровень 1 - Основы веб-разработки", "PHP. Уровень 2 - Профессиональная веб-разработка" и "Javascript - Интерактивные веб-приложения"
+            	        </div>
+            	        
+            	        <div class="success-collapse">
+            	          <span>Свернуть</span>
+            	        </div>
+            	        
+            	      </div>
+            	    </div>
+            	    <div class="author">
+            	      <div class="pic">
+            	        <img src="files/teacher-userpic.jpg">
+            	      </div>
+            	      <div class="name">
+            	        Екатерина Константинопольская
+            	      </div>
+            	      <div class="post">
+            	        Ростов-на-Дону
+            	      </div>
+            	    </div>
+            	  </div>
+            	</div>
+            </div>
+            <div class="prev"></div>
+            <div class="next"></div>
+          </div>
+          
+          <div class="reviews">
+            <div class="reviews-ttl fc">
+            	<h2>Отзывы</h2>
+              <div class="reviews-lister fc"></div>
+            </div>
+            <div class="reviews-slides">
+              <div class="reviews-slide fc">
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <p>Все было отлично, мне понравилось! Я очень рекомендую курс для всех желающих научиться программированию</p>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="files/teacher-userpic.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
+                      <div class="post">Ростов-на-Амуре</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <p>Профессиональный веб-разработчик, успешный фрилансер, системный архитектор и руководитель ряда интернет-проектов.</p>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="files/teacher-userpic.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
+                      <div class="post">Ростов-на-Амуре</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <p>Цикл занятий по курсу «Основы программирования» подготовлен профессиональными преподавателями учебного центра!</p>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="files/teacher-userpic.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
+                      <div class="post">Ростов-на-Амуре</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                    	<p>Все было отлично, мне понравилось! Я очень рекомендую курс для всех желающих научиться программированию</p>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="files/teacher-userpic.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
+                      <div class="post">Ростов-на-Амуре</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews-slide fc">
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                    	<p>Профессиональный веб-разработчик, успешный фрилансер, системный архитектор и руководитель ряда интернет-проектов.</p>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="files/teacher-userpic.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
+                      <div class="post">Ростов-на-Амуре</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                    	<p>Все было отлично, мне понравилось! Я очень рекомендую курс для всех желающих научиться программированию</p>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="files/teacher-userpic.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
+                      <div class="post">Ростов-на-Амуре</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <p>Цикл занятий по курсу «Основы программирования» подготовлен профессиональными преподавателями учебного центра!</p>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="files/teacher-userpic.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
+                      <div class="post">Ростов-на-Амуре</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                    	<p>Все было отлично, мне понравилось! Я очень рекомендую курс для всех желающих научиться программированию</p>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="files/teacher-userpic.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
+                      <div class="post">Ростов-на-Амуре</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews-slide fc">
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                    	<p>Все было отлично, мне понравилось! Я очень рекомендую курс для всех желающих научиться программированию</p>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="files/teacher-userpic.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
+                      <div class="post">Ростов-на-Амуре</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                    	<p>Профессиональный веб-разработчик, успешный фрилансер, системный архитектор и руководитель ряда интернет-проектов.</p>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="files/teacher-userpic.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
+                      <div class="post">Ростов-на-Амуре</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <p>Цикл занятий по курсу «Основы программирования» подготовлен профессиональными преподавателями учебного центра!</p>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="files/teacher-userpic.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
+                      <div class="post">Ростов-на-Амуре</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                    	<p>Все было отлично, мне понравилось! Я очень рекомендую курс для всех желающих научиться программированию</p>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="files/teacher-userpic.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
+                      <div class="post">Ростов-на-Амуре</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews-slide fc">
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                    	<p>Все было отлично, мне понравилось! Я очень рекомендую курс для всех желающих научиться программированию</p>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="files/teacher-userpic.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
+                      <div class="post">Ростов-на-Амуре</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                    	<p>Профессиональный веб-разработчик, успешный фрилансер, системный архитектор и руководитель ряда интернет-проектов.</p>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="files/teacher-userpic.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
+                      <div class="post">Ростов-на-Амуре</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                    	<p>Цикл занятий по курсу «Основы программирования» подготовлен профессиональными преподавателями учебного центра!</p>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="files/teacher-userpic.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
+                      <div class="post">Ростов-на-Амуре</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                    	<p>Все было отлично, мне понравилось! Я очень рекомендую курс для всех желающих научиться программированию</p>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="files/teacher-userpic.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
+                      <div class="post">Ростов-на-Амуре</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="video-block">
+        <div class="center-wrapper">
+          <div class="fc">
+            <div class="video-block-l">
+              <div class="notebook-2">
+              	<div class="video-2">
+              	  <div class="v-cont v-cont-initial"></div>
+              	  <div class="controlDiv controlDiv2" vid="//www.youtube.com/embed/SZ1q0BomHMk" rel="v_iframe_2"></div>
+              	</div>
+              </div>
+            </div>
+            <div class="video-block-r">
+              <h3>Помните, что Вы абсолютно ничем не&nbsp;рискуете</h3>
+              <p>По нашей методике обучения уже научились программировать 7586 человек без какой-либо начальной подготовки. Чем Вы хуже?</p>
+              <p>Мы вернем все деньги без лишних вопросов, если Вам что-то не понравится. Просто напишете об этом на почту.</p>
+              <a href="mailto:support@progbasics.ru" class="support-link"><span>support@progbasics.ru</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bottom-block">
+        <div class="center-wrapper">
+          <div class="bottom-cols">
+          	<div class="bottom-l">
+          	  <h2>Пока Вы читали эту страницу,<br />
+              кое-кто уже открыл<br />
+              веб-студию или удвоил<br />
+              зарплату</h2>
+              <div class="fc">
+                <div class="book-pic">
+                  <img src="images/book.png"/>
+                </div>
+                <div class="book-descr">
+                  <p>Сделайте первый шаг прямо сейчас и мы отправим книгу в подарок сразу после регистрации!</p>
+                  <p>Из книги Вы узнаете, почему 98 из 100 программистов обречены на провал!</p>
+                </div>
+              </div>
+          	</div>
+            <div class="bottom-r">
+              <div class="common-form sign-form">
+                <div class="sign-form-ttl">
+                  <h2>Записывайтесь!</h2>
+                  Начало занятий: 13 декабря
+                </div>
+                <div class="sign-form-cont">
+                  <div class="sign-form-badge">
+                    <div class="cont"><span>100%</span><br />
+                      гарантия<br />возврата денег</div>
+                  </div>
+                  <div class="sign-form-price">
+                    <span class="price-new tooltip-custom tooltip-l" rel="price_new_tooltip_2">970<span>руб.</span></span>
+                    <span class="price-old">
+                      2 350 руб.
+                    </span>
+                    <div class="tooltip-content" rel="price_new_tooltip_2">
+                      <h3>Вы не теряете эту сумму!</h3>
+                      <p>970 рублей будут начислены на внутренний счет ученика “Школы программирования” и будут доступны для оплаты любых дополнительных учебных продуктов центра!</p>
+                    </div>
+                  </div>
+                  <form action=".">
+                    <div class="form-item errors-left">
+                      <label class="placeholder" for="sign_1_name">Ваше имя</label>
+                      <input type="text" class="form-text" name="sign_1_name" id="sign_1_name" required />
+                    </div>
+                    <div class="form-item errors-left">
+                      <label class="placeholder" for="sign_1_phone">Телефон</label>
+                      <input type="text" class="form-text form-phone" name="sign_1_phone" id="sign_1_phone" required />
+                    </div>
+                    <div class="form-item errors-left">
+                      <label class="placeholder" for="sign_1_email">E-mail</label>
+                      <input type="text" class="form-text form-email" name="sign_1_email" id="sign_1_email" required />
+                    </div>
+                    <input type="submit" value="Записаться" class="form-submit button"/>
+                    <div class="form-hint">
+                      <span class="tooltip-custom tooltip-l" rel="confidential_tooltip_2">Политика конфиденциальности</span>
+                    </div>
+                    <div class="tooltip-content" rel="confidential_tooltip_2">
+                      <h3>Политика конфиденциальности</h3>
+                      <p>Интернет-сайт http://progbasics.ru (далее - Сайт) уважает ваше право и соблюдает конфиденциальность при заполнении, передачи и хранении ваших конфиденциальных сведений.</p>
+                      <p>Размещение заявки на Сайте означает Ваше согласие на обработку данных и дальнейшей передачи ваших контактных данных ООО "Школа программирования".</p>
+                      <p>Под персональными данными подразумевается информация, относящаяся к субъекту персональных данных, в частности фамилия и имя, телефон, адрес электронной почты и иные данные, относимые Федеральным законом от 27 июля 2006 года № 152-ФЗ «О персональных данных» (далее – «Закон») к категории персональных данных.Целью обработки персональных данных является оказание Сайтом информационно-справочных услуг, а также информирование о курсах ООО "Школа программирования".</p> 
+                      <p>В случае отзыва согласия на обработку своих персональных данных мы обязуемся удалить Ваши персональные данные в срок не позднее 3 рабочих дней. Отзыв согласия можно отправить в электронном виде по адресу: support@prog-school.ru.</p> 
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    
+  </div>
+
+</div>
+
+<div class="footer">
+  
+  <div class="center-wrapper">
+  	<div class="footer-top">
+  		<div class="countdown-wrapper">
+  		  <div class="countdown-ttl"><span>До начала занятий осталось</span></div>
+  		  <div class="countdown fc"></div>
+  		</div>
+  	</div>
+    <div class="footer-bottom fc">
+      <div class="footer-bottom-l">
+        НОЧУ ДО &laquo;Школа программирования&raquo;, ОГРН 1137799001042
+      </div>
+      <div class="footer-bottom-center">
+        <a href="mailto:support@progbasics.ru" class="support-link"><span>support@progbasics.ru</span></a>
+      </div>
+      <div class="footer-bottom-r">
+        Наш адрес: 115114, Москва, Летниковская ул, д.10 стр.2
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!-- Popups -->
+
+<div class="popup sign-popup" id="signPopup">
+  <div class="popup-content">
+    <div class="common-form sign-form">
+      <div class="sign-form-ttl">
+        <div class="close"></div>
+        <h2>Записывайтесь!</h2>
+        Начало занятий: 13 декабря
+      </div>
+      <div class="sign-form-cont">
+        <div class="sign-form-badge">
+          <div class="cont"><span>100%</span><br />
+            гарантия<br />возврата денег</div>
+        </div>
+        <div class="sign-form-price">
+          <span class="price-new">970<span>руб.</span></span>
+          <span class="price-old">
+            2 350 руб.
+          </span>
+        </div>
+        <form action=".">
+          <div class="form-item errors-left">
+            <label class="placeholder" for="sign_1_name">Ваше имя</label>
+            <input type="text" class="form-text" name="sign_1_name" id="sign_1_name" required />
+          </div>
+          <div class="form-item errors-left">
+            <label class="placeholder" for="sign_1_phone">Телефон</label>
+            <input type="text" class="form-text form-phone" name="sign_1_phone" id="sign_1_phone" required />
+          </div>
+          <div class="form-item errors-left">
+            <label class="placeholder" for="sign_1_email">E-mail</label>
+            <input type="text" class="form-text form-email" name="sign_1_email" id="sign_1_email" required />
+          </div>
+          <input type="submit" value="Записаться" class="form-submit button"/>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Popups END -->
+
+</body>
+
+</html>
