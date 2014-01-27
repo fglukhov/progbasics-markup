@@ -96,51 +96,73 @@ $(document).ready(function () {
       
       $(".way-tooltips .tooltip-popup").fadeOut(150);
       
-      if ((- $(window).scrollTop() + $("#way-slider .ui-slider-handle").offset().top) < $(window).height()/2) {
-        $(".way-tooltips .tooltip-popup").addClass("tooltip-popup-b");
-        $(".way-tooltips .tooltip-popup").removeClass("tooltip-popup-t");
-      } else {
-        $(".way-tooltips .tooltip-popup").addClass("tooltip-popup-t");
-        $(".way-tooltips .tooltip-popup").removeClass("tooltip-popup-b");
-      }
-      
       if (pos < 50) {
         $( "#way-slider" ).slider( "value", 0 );
-        $("#way-tooltip-1").fadeIn(150);
+        $("#way-tooltip-1").show().css("opacity",0).css("margin-bottom",-55).animate({
+          marginBottom: 0,
+          opacity:1
+        },300);
       }
       
       if (pos >= 50 && pos < 150) {
         $( "#way-slider" ).slider( "value", 100 );
-        $("#way-tooltip-2").fadeIn(150);
+        $("#way-tooltip-2").show().css("opacity",0).css("margin-bottom",-55).animate({
+          marginBottom: 0,
+          opacity:1
+        },300);
       }
       
       if (pos >= 150 && pos < 250) {
         $( "#way-slider" ).slider( "value", 200 );
-        $("#way-tooltip-3").fadeIn(150);
+        $("#way-tooltip-3").show().css("opacity",0).css("margin-bottom",-55).animate({
+          marginBottom: 0,
+          opacity:1
+        },300);
       }
       
       if (pos >= 250 && pos < 350) {
         $( "#way-slider" ).slider( "value", 300 );
-        $("#way-tooltip-4").fadeIn(150);
+        $("#way-tooltip-4").show().css("opacity",0).css("margin-bottom",-55).animate({
+          marginBottom: 0,
+          opacity:1
+        },300);
       }
       
       if (pos >= 350 && pos < 450) {
         $( "#way-slider" ).slider( "value", 400 );
-        $("#way-tooltip-5").fadeIn(150);
+        $("#way-tooltip-5").show().css("opacity",0).css("margin-bottom",-55).animate({
+          marginBottom: 0,
+          opacity:1
+        },300);
       }
       
       if (pos >= 450) {
         $( "#way-slider" ).slider( "value", 500 );
-        $("#way-tooltip-6").fadeIn(150);
-      }
-      
-      if ($("#way-tooltip-6").hasClass("tooltip-popup-t")) {
-        $("#way-tooltip-6").removeClass("way-tooltip-6-b");
-      } else {
-        $("#way-tooltip-6").addClass("way-tooltip-6-b");
+        $("#way-tooltip-6").show().css("opacity",0).css("margin-bottom",-55).animate({
+          marginBottom: 0,
+          opacity:1
+        },300);
       }
       
     }
+  });
+  
+  $(".way-block .ico-novice").click(function() {
+    $(".way-tooltip-popup").fadeOut(150);
+    $("#way-slider").slider( "value", 0 );
+    $("#way-tooltip-1").show().css("opacity",0).css("margin-bottom",-55).animate({
+      marginBottom: 0,
+      opacity:1
+    },300);
+  })
+  
+  $(".way-block .ico-guru").click(function() {
+    $(".way-tooltip-popup").fadeOut(150);
+    $("#way-slider").slider( "value", 500 );
+    $("#way-tooltip-6").show().css("opacity",0).css("margin-bottom",-55).animate({
+      marginBottom: 0,
+      opacity:1
+    },300);
   })
 
   var curDate = new Date();
@@ -221,10 +243,17 @@ function makeup() {
     
     if ($(this).prop("tagName") == "INPUT") {
       // if (!$(this).parents(".input-wrapper").length) $(this).wrap("<div class='input-wrapper'></div>");
-      $(this).focus(function() {
-        $(this).removeClass("initial");
-        $(this).parents(".form-item").find(".placeholder").hide();
-      });
+      if ($(this).hasClass("form-phone")) {
+        $(this).focus(function() {
+          $(this).removeClass("initial");
+          $(this).parents(".form-item").find(".placeholder").hide();
+        });
+      } else {
+        $(this).keydown(function() {
+          $(this).removeClass("initial");
+          $(this).parents(".form-item").find(".placeholder").hide();
+        });
+      }
       $(this).blur(function() {
         $(this).prev().prev(".placeholder").hide();
         if (!$(this).val()) {
@@ -414,7 +443,7 @@ jQuery.extend(jQuery.validator.messages, {
           //sliderMakeup();
           lister.css("background-position",lister.find(".act").offset().left-2000+lister.find(".act").outerWidth()/2+"px"+" 0");
           
-          sliderAnimate($(".slide-act").prevAll(".slide").length);
+          sliderAnimate(slider.find(".slide-act").prevAll(".slide").length);
           
         }
       });
@@ -522,6 +551,11 @@ function programCalendar() {
   //tabContents.filter("[rel='"+tabs.filter(".act").attr("rel")+"']").show();
   
   //tabContents.find(".course-descr-pt").css("left",tabs.first().position().left + 45 - 16)
+  
+  tabs.eq(0).addClass("act");
+  tabContents.eq(0).show();
+  
+  tabContents.find(".course-descr-pt").css("left",tabs.eq(0).position().left + 45 - 16)
   
   tabs.click(function() {
     if (!tabs.parents().hasClass("tabs-triggered")) {
