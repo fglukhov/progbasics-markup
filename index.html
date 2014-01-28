@@ -22,6 +22,17 @@
 <script type="text/javascript" src="js/jquery.transit.min.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
 
+<!-- VK -->
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?96"></script>
+
+<script type="text/javascript">
+  VK.init({apiId: 3736437, onlyWidgets: true});
+  VK.Widgets.Like("vk_like", {type: "button", height: 20});
+  VK.Widgets.Comments("vk_comments", {limit: 10, width: "980", attach: false});
+</script>
+
+<!-- /VK -->
+
 </head>
 
 <body>
@@ -220,15 +231,7 @@
               	</div>
               </div>
               <div class="socbuttons">
-                <!-- AddThis Button BEGIN -->
-                <div class="addthis_toolbox addthis_default_style">
-                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-                <a class="addthis_button_tweet"></a>
-                <a class="addthis_counter addthis_pill_style"></a>
-                </div>
-                <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521e35c26e2f9151"></script>
-                <!-- AddThis Button END -->
+                <div id="vk_like" style="margin-left: 60px;"></div>
               </div>
             </div>
             <div class="common-form sign-form">
@@ -533,13 +536,13 @@
               <div class="course-descr-teacher">
                 <h3>Ведущий</h3>
                 <div class="pic">
-                  <img src="files/teacher-userpic.jpg"/>
+                  <img src="files/teacher-lavrik.jpg"/>
                 </div>
                 <div class="name">
-                  Ольга<br />Кузнецова
+                  Дмитрий<br />Лаврик
                 </div>
                 <div class="post">
-                  Специалист по маркетингу и продвижению
+                  
                 </div>
               </div>
               <div class="course-descr-descr">
@@ -596,7 +599,7 @@
               <div class="course-descr-teacher">
                 <h3>Ведущий</h3>
                 <div class="pic">
-                  <img src="files/teacher-userpic.jpg"/>
+                  <img src="files/teacher-mishanin.jpg"/>
                 </div>
                 <div class="name">
                   Андрей<br />Мишанин
@@ -642,7 +645,7 @@
               <div class="course-descr-teacher">
                 <h3>Ведущий</h3>
                 <div class="pic">
-                  <img src="files/teacher-userpic.jpg"/>
+                  <img src="files/teacher-lavrik.jpg"/>
                 </div>
                 <div class="name">
                   Ольга<br />Кузнецова
@@ -685,10 +688,10 @@
               <div class="course-descr-teacher">
                 <h3>Ведущий</h3>
                 <div class="pic">
-                  <img src="files/teacher-userpic.jpg"/>
+                  <img src="files/teacher-zharikov.jpg"/>
                 </div>
                 <div class="name">
-                  Ольга<br />Кузнецова
+                  Андрей<br />Жариков
                 </div>
                 <div class="post">
                   Специалист по маркетингу и продвижению
@@ -759,7 +762,7 @@
               <div class="course-descr-teacher">
                 <h3>Ведущий</h3>
                 <div class="pic">
-                  <img src="files/teacher-userpic.jpg"/>
+                  <img src="files/teacher-rostokin.jpg"/>
                 </div>
                 <div class="name">
                   Илья<br />Ростокин
@@ -811,13 +814,13 @@
               <div class="course-descr-teacher">
                 <h3>Ведущий</h3>
                 <div class="pic">
-                  <img src="files/teacher-userpic.jpg"/>
+                  <img src="files/teacher-lavrik.jpg"/>
                 </div>
                 <div class="name">
-                  Ольга<br />Кузнецова
+                  Дмитрий<br />Лаврик
                 </div>
                 <div class="post">
-                  Специалист по маркетингу и продвижению
+                  
                 </div>
               </div>
               <div class="course-descr-descr">
@@ -895,7 +898,7 @@
               <div class="course-descr-teacher">
                 <h3>Ведущий</h3>
                 <div class="pic">
-                  <img src="files/teacher-userpic.jpg"/>
+                  <img src="files/teacher-akinin.jpg"/>
                 </div>
                 <div class="name">
                   Дмитрий<br />Акинин
@@ -943,7 +946,7 @@
               <div class="course-descr-teacher">
                 <h3>Ведущий</h3>
                 <div class="pic">
-                  <img src="files/teacher-userpic.jpg"/>
+                  <img src="files/teacher-davidov.jpg"/>
                 </div>
                 <div class="name">
                   Семен<br />Давыдов
@@ -996,10 +999,10 @@
               <div class="course-descr-teacher">
                 <h3>Ведущий</h3>
                 <div class="pic">
-                  <img src="files/teacher-userpic.jpg"/>
+                  <img src="files/teacher-lavrik.jpg"/>
                 </div>
                 <div class="name">
-                  Ольга<br />Кузнецова
+                  Дмитрий<br />Лаврик
                 </div>
                 <div class="post">
                   Специалист по маркетингу и продвижению
@@ -1721,130 +1724,68 @@
                 <div class="reviews-item">
                   <div class="reviews-cite">
                     <div class="cont">
-                      <p>Все было отлично, мне понравилось! Я очень рекомендую курс для всех желающих научиться программированию</p>
+                      <div class="cont-cont">
+                      	<p>Дмитрий, спасибо за доступно и подробно разобранную информацию. Повторение некоторых непонятных моментов объяснение трудных моментов. Занятия прошли легко в непринужденной обстановке, но все понятно! Еще раз спасибо!</p>
+                      </div>
                     </div>
                   </div>
                   <div class="reviews-author fc">
                     <div class="pic">
-                      <img src="files/teacher-userpic.jpg"/>
+                      <img src="http://cs407727.vk.me/v407727567/2e0f/GnYBblt61e8.jpg"/>
                     </div>
                     <div class="descr">
-                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
-                      <div class="post">Ростов-на-Амуре</div>
+                      <div class="name"><a target="_blank" href="http://vk.com/id6637567">Татьяна Сорокина</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="reviews-item">
                   <div class="reviews-cite">
                     <div class="cont">
-                      <p>Профессиональный веб-разработчик, успешный фрилансер, системный архитектор и руководитель ряда интернет-проектов.</p>
+                      <div class="cont-cont">
+                      	<p>Спасибо за доступное изложение материала. Не смогла участвовать во всех вебинарах, но обязательно досмотрю в записях.</p>
+                      </div>
                     </div>
                   </div>
                   <div class="reviews-author fc">
                     <div class="pic">
-                      <img src="files/teacher-userpic.jpg"/>
+                      <img src="http://cs1263.vk.me/u8077515/e_cb58ac23.jpg"/>
                     </div>
                     <div class="descr">
-                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
-                      <div class="post">Ростов-на-Амуре</div>
+                      <div class="name"><a target="_blank" href="http://vk.com/ognevat">Татьяна Огнева</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="reviews-item">
                   <div class="reviews-cite">
                     <div class="cont">
-                      <p>Цикл занятий по курсу «Основы программирования» подготовлен профессиональными преподавателями учебного центра!</p>
+                      <div class="cont-cont">
+                      	<p>Спасибо Дмитрий!</p>
+                      </div>
                     </div>
                   </div>
                   <div class="reviews-author fc">
                     <div class="pic">
-                      <img src="files/teacher-userpic.jpg"/>
+                      <img src="http://cs424320.vk.me/v424320167/a989/Bs9vpljHVCo.jpg"/>
                     </div>
                     <div class="descr">
-                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
-                      <div class="post">Ростов-на-Амуре</div>
+                      <div class="name"><a target="_blank" href="http://vk.com/id26061167">Саша Шишко</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="reviews-item">
                   <div class="reviews-cite">
                     <div class="cont">
-                    	<p>Все было отлично, мне понравилось! Я очень рекомендую курс для всех желающих научиться программированию</p>
+                    	<div class="cont-cont">
+                    		<p>Хоть я не новичок в программировании, но пришел на занятия дабы понять в чем проблема при написании программ, мне Дмитрий очень в этом помог! Разжевал все песчинки, я видел в чате как люди радовались своей первой программе, это за 2 часа.... Когда я учился один, на это ушло 1.5 недели. Сама идея о "школа программирования", которая сейчас перед глазами достойна уважания, а про ее успех я даже слов не могу подобрать!</p>
+                    	</div>
                     </div>
                   </div>
                   <div class="reviews-author fc">
                     <div class="pic">
-                      <img src="files/teacher-userpic.jpg"/>
+                      <img src="http://cs608518.vk.me/v608518854/405/oA7SldpDp9c.jpg"/>
                     </div>
                     <div class="descr">
-                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
-                      <div class="post">Ростов-на-Амуре</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="reviews-slide fc">
-                <div class="reviews-item">
-                  <div class="reviews-cite">
-                    <div class="cont">
-                    	<p>Профессиональный веб-разработчик, успешный фрилансер, системный архитектор и руководитель ряда интернет-проектов.</p>
-                    </div>
-                  </div>
-                  <div class="reviews-author fc">
-                    <div class="pic">
-                      <img src="files/teacher-userpic.jpg"/>
-                    </div>
-                    <div class="descr">
-                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
-                      <div class="post">Ростов-на-Амуре</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="reviews-item">
-                  <div class="reviews-cite">
-                    <div class="cont">
-                    	<p>Все было отлично, мне понравилось! Я очень рекомендую курс для всех желающих научиться программированию</p>
-                    </div>
-                  </div>
-                  <div class="reviews-author fc">
-                    <div class="pic">
-                      <img src="files/teacher-userpic.jpg"/>
-                    </div>
-                    <div class="descr">
-                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
-                      <div class="post">Ростов-на-Амуре</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="reviews-item">
-                  <div class="reviews-cite">
-                    <div class="cont">
-                      <p>Цикл занятий по курсу «Основы программирования» подготовлен профессиональными преподавателями учебного центра!</p>
-                    </div>
-                  </div>
-                  <div class="reviews-author fc">
-                    <div class="pic">
-                      <img src="files/teacher-userpic.jpg"/>
-                    </div>
-                    <div class="descr">
-                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
-                      <div class="post">Ростов-на-Амуре</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="reviews-item">
-                  <div class="reviews-cite">
-                    <div class="cont">
-                    	<p>Все было отлично, мне понравилось! Я очень рекомендую курс для всех желающих научиться программированию</p>
-                    </div>
-                  </div>
-                  <div class="reviews-author fc">
-                    <div class="pic">
-                      <img src="files/teacher-userpic.jpg"/>
-                    </div>
-                    <div class="descr">
-                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
-                      <div class="post">Ростов-на-Амуре</div>
+                      <div class="name"><a target="_blank" href="http://vk.com/alex_xxx">Александр Рассанов</a></div>
                     </div>
                   </div>
                 </div>
@@ -1853,64 +1794,79 @@
                 <div class="reviews-item">
                   <div class="reviews-cite">
                     <div class="cont">
-                    	<p>Все было отлично, мне понравилось! Я очень рекомендую курс для всех желающих научиться программированию</p>
+                      <div class="cont-cont">
+                      	<p>Занятия прошли в весьма лёгкой и не напряжной форме, но при этом интересно. Общение шло не как с кем-то абстрактным по ту сторону интернета, а осталось ощущение личного присутствия. Чувствуется педагогический навык Дмитрия в подходе к формированию и подаче занятий, позволяющий легче усваивать материал. К сожалению тоже не смог присутствовать на вебинарах в прямом эфире кроме первого, но записи посмотрел с большим удовольствием.</p>
+                      </div>
                     </div>
                   </div>
                   <div class="reviews-author fc">
                     <div class="pic">
-                      <img src="files/teacher-userpic.jpg"/>
+                      <img src="http://cs9357.vk.me/u3235139/e_c2a58a53.jpg"/>
                     </div>
                     <div class="descr">
-                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
-                      <div class="post">Ростов-на-Амуре</div>
+                      <div class="name"><a target="_blank" href="http://vk.com/vkolobok">Колобок Pacman</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="reviews-item">
                   <div class="reviews-cite">
                     <div class="cont">
-                    	<p>Профессиональный веб-разработчик, успешный фрилансер, системный архитектор и руководитель ряда интернет-проектов.</p>
+                      <div class="cont-cont">
+                      	<p>Прошел курс с большим удовольствием, в программировании новичок, но всегда был интересен процесс написания, вообще, принцип построения программ. Всё было доступно для понимания, увлекательно преподнесено, а сам процесс обучения с максимальным откликом от преподавателя Дмитрия Лаврика мне показался очень удобным, нет привязки к расстоянию! Появилось желание продолжать учиться дальше!) С уважением, Александр!</p>
+                      </div>
                     </div>
                   </div>
                   <div class="reviews-author fc">
                     <div class="pic">
-                      <img src="files/teacher-userpic.jpg"/>
+                      <img src="http://cs616527.vk.me/v616527488/351e/rNTwWGXUhXY.jpg"/>
                     </div>
                     <div class="descr">
-                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
-                      <div class="post">Ростов-на-Амуре</div>
+                      <div class="name"><a target="_blank" href="http://vk.com/just_skywalker">Александр Стародубцев</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="reviews-item">
                   <div class="reviews-cite">
                     <div class="cont">
-                      <p>Цикл занятий по курсу «Основы программирования» подготовлен профессиональными преподавателями учебного центра!</p>
+                      <div class="cont-cont">преподаватель именно такой, каким и должен быть преподаватель.<br /> 
+                      	данный курс лучше всего подходит тем, кто ничего не знает о программировании<br />
+                      	но присутствовали люди, которые хорошо разбираются в основах<br />
+                      	они мгновенно отвечали на вопросы преподавателя<br />
+                      	на мой взгляд абсолютному новичку было местами очень сложно понять всё на лекции<br />
+                      	у меня уже были все эти знания основ, но не больше. И вопросов не возникало<br />
+                      	я пришёл на курс, чтобы узнать на практике как в ШП проходит обучение<br />
+                      	и определиться в каком направлении мне дальше двигаться (сайты, мобилы, прикладные пр.)<br />
+                      	
+                      	но вспоминая себя когда я был на нулевом уровне<br />
+                      	и если бы в меня закинули за два часа столько информации<br />
+                      	мне бы пришлось часами во всём этом разбираться<br />
+                      	
+                      	Вердикт - 5 баллов из 5</div>
                     </div>
                   </div>
                   <div class="reviews-author fc">
                     <div class="pic">
-                      <img src="files/teacher-userpic.jpg"/>
+                      <img src="http://cs403230.vk.me/v403230401/5d90/sE-q6-ijbwE.jpg"/>
                     </div>
                     <div class="descr">
-                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
-                      <div class="post">Ростов-на-Амуре</div>
+                      <div class="name"><a target="_blank" href="http://vk.com/bhagavateen">Илья Нигода</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="reviews-item">
                   <div class="reviews-cite">
                     <div class="cont">
-                    	<p>Все было отлично, мне понравилось! Я очень рекомендую курс для всех желающих научиться программированию</p>
+                    	<div class="cont-cont">
+                    		<p>Доступно и понятно :)</p>
+                    	</div>
                     </div>
                   </div>
                   <div class="reviews-author fc">
                     <div class="pic">
-                      <img src="files/teacher-userpic.jpg"/>
+                      <img src="http://cs312128.vk.me/v312128244/1426/iC27ND-I6J4.jpg"/>
                     </div>
                     <div class="descr">
-                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
-                      <div class="post">Ростов-на-Амуре</div>
+                      <div class="name"><a target="_blank" href="http://vk.com/al_kartasi">Нариман Ибрагимов</a></div>
                     </div>
                   </div>
                 </div>
@@ -1919,64 +1875,571 @@
                 <div class="reviews-item">
                   <div class="reviews-cite">
                     <div class="cont">
-                    	<p>Все было отлично, мне понравилось! Я очень рекомендую курс для всех желающих научиться программированию</p>
+                      <div class="cont-cont">Курс и преподаватель оставили самые лучшие впечатления. К сожалению, не смогла участвовать в занятиях в режиме реального времени и смотрела все в записи. Но это не помешало оценить блестящее и свободное владение материалом, гибкую манеру подачи, способность постоянно держать контакт с аудиторией.<br />
+                      	
+                      	Дмитрий Лаврик не только продемонстрировал высокий уровень "программистского" профессионализма, но и проявил лучшие качества настоящего преподавателя: одновременное обращение к слушателям разных степеней подготовки, доступность изложения без скатывания в примитивизм, мгновенное иллюстрирование любого теоретического пассажа практическим примером.<br />
+                      	
+                      	Восхитило его умение молниеносно реагировать на сообщения в чате, все время иметь их в виду и строить эпизоды урока исходя из потребностей и "непоняток" аудитории. Очень понравились разборы ДЗ,<br />
+                      	
+                      	Дмитрий постоянно проясняет самые важные "идеологические" моменты программирования, ставит важные принципиальные акценты, проводит профилактику глупых заблуждений. Это очень важно для таких "самоучек", как я, - здорово прочищает голову и многое ставит на свои места.<br />
+                      	
+                      	Огромное спасибо за уроки, ориентиры и радость общения с настоящим профи!</div>
                     </div>
                   </div>
                   <div class="reviews-author fc">
                     <div class="pic">
-                      <img src="files/teacher-userpic.jpg"/>
+                      <img src="http://cs11250.vk.me/u14240861/e_f85869dd.jpg"/>
                     </div>
                     <div class="descr">
-                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
-                      <div class="post">Ростов-на-Амуре</div>
+                      <div class="name"><a target="_blank" href="http://vk.com/id14240861">Ирина Родина</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="reviews-item">
                   <div class="reviews-cite">
                     <div class="cont">
-                    	<p>Профессиональный веб-разработчик, успешный фрилансер, системный архитектор и руководитель ряда интернет-проектов.</p>
+                      <div class="cont-cont">
+                      	<p>спасибо большое</p>
+                      </div>
                     </div>
                   </div>
                   <div class="reviews-author fc">
                     <div class="pic">
-                      <img src="files/teacher-userpic.jpg"/>
+                      <img src="http://cs403126.vk.me/v403126012/aa94/K26kWQ8d4Bs.jpg"/>
                     </div>
                     <div class="descr">
-                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
-                      <div class="post">Ростов-на-Амуре</div>
+                      <div class="name"><a target="_blank" href="http://vk.com/id177065012">Дмитрий Жуков</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="reviews-item">
                   <div class="reviews-cite">
                     <div class="cont">
-                    	<p>Цикл занятий по курсу «Основы программирования» подготовлен профессиональными преподавателями учебного центра!</p>
+                      <div class="cont-cont">
+                      	<p>Дмитрию спасибо за курс. Сам первый раз занялся программированием, думал будет полная беда, но оказывается с не так все плохо.))) Курсы все понравились, профессиональный подход. Только жалко что мало людей это оценили и после первого урока, ходило всего два человека вместе со мной, но опять же даже в такой ситуации, Дмитрий выполнял свою работу профессионально. За что ему большое спасибо.</p>
+                      </div>
                     </div>
                   </div>
                   <div class="reviews-author fc">
                     <div class="pic">
-                      <img src="files/teacher-userpic.jpg"/>
+                      <img src="http://vk.com/images/camera_c.gif"/>
                     </div>
                     <div class="descr">
-                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
-                      <div class="post">Ростов-на-Амуре</div>
+                      <div class="name"><a target="_blank" href="http://vk.com/id151184030">Спортивный Эксперт</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="reviews-item">
                   <div class="reviews-cite">
                     <div class="cont">
-                    	<p>Все было отлично, мне понравилось! Я очень рекомендую курс для всех желающих научиться программированию</p>
+                    	<div class="cont-cont">
+                    		<p>У меня всегда было желание освоить программирование, я уважаю тех людей, которые пишут программы по различным направлениям и целям. Защита диплома у меня было АСУТП на бэйсике и ассемблере. И когда представилась возможность, я не раздумывал... Было интересно, институтские навики пригодились и лектор хорошо вел занятия, практически, все было понятно. Сейчас понимаю, мечту свою нужно реализовывать, вот только финансы... А так непременно. Спасибо, что вы есть, и не забываете меня.</p>
+                    	</div>
                     </div>
                   </div>
                   <div class="reviews-author fc">
                     <div class="pic">
-                      <img src="files/teacher-userpic.jpg"/>
+                      <img src="http://cs262.vk.me/u58861440/e_359988af.jpg"/>
                     </div>
                     <div class="descr">
-                      <div class="name"><a href="#">Анастасия Константинопольская</a></div>
-                      <div class="post">Ростов-на-Амуре</div>
+                      <div class="name"><a target="_blank" href="http://vk.com/vn1963">Виктор Нахалов</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews-slide fc">
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>Курс был очень интересным и невероятно полезным. Для себя узнал много нового, т.к пока новичок в программировании. Буду двигаться дальше, благо возможности ШП позволяют. Много заманчивых предложений. Выбираю что подходит мне и чем именно в сфере программирования хочу заниматься. Дмитрию отдельное СПАСИБО за то что очень профессионально и доступно изложил материал. Все было великолепно. Огромное спасибо.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs314421.vk.me/v314421778/966c/mIWhQYP3A2A.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/alexandr_zyk">Александр Зык</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>От Александра. Данный базовый курс для меня не прошел даром. Лекции очень интересные и познавательные. Будем двигаться потихоньку дальше.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs311631.vk.me/v311631142/c3e/-o9wk1hgjdw.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/nogticivrn">Надежда Устинова</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>Прошел все обучение! С помощью курса освежил свои знания, открыл для себя что-то новое. Дмитрий, огромное вам спасибо! НА мой взгляд, ваш курс является идеальным решением проблемы старта в программировании.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs419431.vk.me/v419431400/4d0/oXMxNoME2jM.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/kh_kamil">Камиль Хуснутдинов</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                    	<div class="cont-cont">
+                    		<p>Спасибо Дмитрию за курс основы программирования. Он мне очень помог.</p>
+                    	</div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs410519.vk.me/v410519219/3dab/M-1H_h1Vz3g.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/sam2050">Александр Балашов</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews-slide fc">
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>Я прошла всё обучение,преподаватель приятный,грамотно и понятно всё объясняет!Будем дальше пробовать учиться!Огромное спасибо!!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs425916.vk.me/v425916381/5498/dVHmdVt7ghU.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/id17007381">Ирина Павловичева</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>Доброго времени суток Дмитрий, благодарю вас очень ёмко, качественно и главное интересно и понятно. Самым ценным считаю второй урок,ибо правильное построение алгоритма работы программы фундамент качественного програмирования.Именно за этим и шёл на курсы. С Уважением Александр</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs304904.vk.me/v304904426/415b/vZMJnNeLQtw.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/id153476426">Александр Иванов</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>Здравствуйте Ш,П, и в особенности Дмитрий у которого получилось интересно изложить курсы о программирование. Хоть мне и с трудом все это дается ,но все мои старания перед неизведанным развили интерес к программированию. И в этом я считаю большая заслуга Дмитрия. Большое человеческое спасибо ВАМ ВСЕМ кто принимал участие по созданию этого курса с уважением Вячеслав.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs407628.vk.me/v407628782/8a91/7fPwSX9mCJ4.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="#">Вячеслав Проскуряков</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                    	<div class="cont-cont">
+                    		<p>Спасибо за курс, очень понравился. Самое главное, что всё объясняют очень доступно. Дмитрий Лаврик отличный преподователь, разбирает все вопросы которые задают, с душой подходит ко всем абитуриентам, ну и самое главное у него всегда хорошее настроение и это очень заряжает на обучение.</p>
+                    	</div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs319721.vk.me/v319721409/91a0/RSK5ah684xo.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/combatstun">Ярослав Калашник</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews-slide fc">
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">Курс очень понравился!<br />
+                      	У меня есть некоторый опыт в программировании на VBA (под Аксес), и некоторые базовые знания по C.
+                      	Но мне очень хотелось познакомиться с основами программирования под Интернет в JavaScript.
+                      	Мне понравилось, как объясняет Дмитрий. Думаю, что с такими преподавателями можно изучить все. <br />
+                      	
+                      	Была удивлена, что даже в бесплатном курсе, Дмитрий внимательно анализировал все наши работы. 
+                      	Когда на моем задании показывали как можно сделать короче и лучше, чувствовала себя не онлайн, а в классе, возле преподавателя.<br />
+                      	
+                      	Отличный обзор направлений программирования. Очень вдохновляет. Думаю после отпуска записываться на онлайн обучение.<br />
+                      	Теперь вижу, что онлайн учиться можно, и нужно. И без внимания не оставят, и помогут. Спасибо огромное.</div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs9858.vk.me/u171900693/e_e119c733.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/id171900693">Гусь Качаетсяхрустальный</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>Хорошие курсы! Преподаватель Дмитрий Лаврик своё дело знает. Очень легко и понятно, весьма доброжелательно проводит занятия. По учебникам так не научишься. Мне понравилось, спасибо!!!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs410522.vk.me/u6517141/e_dca53a88.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/id6517141">Дмитрий Пильник</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>Большое спасибо за курсы. Дмитрий объясняет понятно и доходчиво. Занятия интересны. Практика в виде домашнего задания позволяет лучше разобраться в теории. И ничего лишнего. Всё просто. Спасибо вам, Дмитрий.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs608221.vk.me/v608221421/22df/ytdXP7kgjRI.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/id83425421">Ольга Дурнева</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                    	<div class="cont-cont">
+                    		<p>Интерессно, доходчиво, оригинально и очень познавательно. Мне понравилось, проходил курс для общего развитияя, многое почерпнул на будующее</p>
+                    	</div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs617722.vk.me/v617722463/32c9/kt2FmBCRyFs.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/id32023463">Іван Ковальчук</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews-slide fc">
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>Я новичек и раньше не сталкивался с программированием. Дмитрий великолепный учитель, у которого буду рад учиться и дальше. Все настолько логично и просто доносит до слушателя. Успехов Вам, Дмитрий!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://vk.com/images/deactivated_c.gif"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/worobez_max">Максим Воробец</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>Великолепный курс! Всё понравилось. Что-то знала раньше, а что-то было новым для меня. Спасибо, что помогли это систематизировать в моей голове)). Дмитрий - вы очень хороший преподаватель! Так держать :)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs424622.vk.me/v424622523/7d42/5u0rYyyDtog.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/prostaya.koshka">Простая Кошка</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>Все было великолепно, понятно и просто. Желаю дальнейшего развития школы. Побольше бы таких семинаров. Спасибо вам за труды Дмитрий</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs314519.vk.me/v314519206/4afc/CspcbofIW2E.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/id96434206">Илья Богданов</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                    	<div class="cont-cont">
+                    		<p>На ОП я записался, чтобы понять, с чего начать изучение языка Javascript. Никаких страхов не испытывал до курса, так как программировал и до этого и я знал на что я шел. Всё было замечательно, курсы проводились на высокой оценке, а преподаватель знает как привлечь и подать материал, чтобы он был легок в усвоении. Для меня как тут так и везде самое ценное в курсе оказалось это ДЗ. Большинство было весьма простым и делалось за минуту, но над некоторыми стоило попотеть. И это ведь не зря. За две недели обучаясь у вас, я понял все, чему вы нас учили. Самое основное понять для меня было это как работать с Javascript и вы мне показали как с ним разговаривать. Огромное спасибо за это. Сейчас я прослушиваю ваши курсы по марафону и жду мастер-класса 11 июля. Относительно марафона хочу сказать, что он уже вселяет надежду на то, что не зря начал его смотреть. Первые 4 урока - это в основном те уроки, которые были у нас с вами на ОП, но последние 4 урока они самые важные для меня, так что с нетерпением их жду. Относительно мастер-класса: я мастер-классы не люблю, но этот меня очень сильно заинтересовал, так что я его с нетерпением жду. Спасибо вам за всё!</p>
+                    	</div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs417116.vk.me/v417116765/7710/anOiQGKN4XI.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/id116889765">And Smi</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews-slide fc">
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>На Основы программирования записалась по необходимости, такая себе легкая подготовка к изучению программирования в 1С :) Но это затягивает, оказалось. Зарегистрировалась на марафон, смотрю мастер-классы, и также жду 5 урока. Когда знания подаются в настолько доступной форме, грех упускать возможность. Благодаря ШП и Дмитрию начала разбираться в азах, успокоилась (а паника была, да), и буду продолжать учиться в ШП. Дмитрий - отличный преподаватель! Огромное ему спасибо!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs403125.vk.me/v403125663/8a63/-82nncrp9QE.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/m.biletskaya">Марина Билецкая</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>Последние несколько месяцев увлеклась вёрсткой на html и css. Иногда требуется javascript. Вообще я люблю добывать знания самостоятельно, но не хватает систематизации. Иногда просто теряешься в потоке информации - что нужно изучать, а что нет... Случайно наткнулась на ссылку марафона и школы программирования и зарегистрировалась. Дима Лаврик - замечательный преподаватель. Доступно объясняет, отвечает на вопросы, держит обратную связь. Дима, спасибо вам огромное! С нетерпением жду 5 урока!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs348.vk.me/v348164/f8b/iVCTE5iEFQ4.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/elenasaenko">Елена Саенко</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>Отличный курс и великолепный преподаватель. До этого был на курсах по obj-c и мне казалось, что преподаватель на высоте объясняет материал, но после Дмитрия, я понял, что заблуждался:) Дмитрий, если Вы будете вести все курсы в ШП, то я запишусь на каждый, ибо так легко доносить информацию - это талант:)<br />Большое спасибо!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs418.vk.me/u9655557/e_0049b1a8.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/mr_kiris">Кирилл Шаланкин</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                    	<div class="cont-cont">
+                    		<p>Спасибо большое за курс! Но преподавателя не хватает для обратной связи, даже на форуме видно, что у многих остались вопросы без ответов. Если бы было больше взаимосвязи, курсу бы цены не было! Темы даны доступно, логично. Спасибо!</p>
+                    	</div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs402223.vk.me/v402223467/b3b4/vWskLpZopSA.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/id16581467">Светлана Савинкина</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews-slide fc">
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>После обучения на курсе Дмитрия Лаврика мой энтузиазм, в занятиях программированием, только возрос. Сейчас штудирую тематическую литературу и планирую дальше обучаться на курсах. Не исключено что в ШП, не исключено что у Дмитрия... Все темы были изложены доступно, а работа над домашними заданиями помогла, еще больше, вникнуть в суть пройденного. Дмитрий, спасибо Вам за уделенное нам время!!!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs304615.vk.me/u175133615/e_c1e26f1e.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/id175133615">Руслан Кадыров</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>Дмитрий, огромное спасибо!!! Мне все очень понравилось, благодарю вас, за ценную информацию, очень понятную и доходчиво изложенную вами. За эти две недели, я понял, что программировать - это одно удовольствие, а самое интересное, меня затронул процесс написания кода. Вообще я ориентируюсь на веб-программиста и на данном этапе обучаюсь на курсе HTML &amp; CSS и после данного курса еще собираюсь освоить PHP (1 и 2) уровня в вашей школе. Мне очень нравится ваша школа т.к. я хочу стать высококвалифицированным специалистом в этой обасти. Спасибо!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs314427.vk.me/v314427947/408f/H0CCv0_h4kE.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/web__expert">Александр Михеев</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>Дмитрий ,большое спасибо.Вы отличный педагог и с вами интересно,уроки проходят информативно и живо.Мне очень понравилось.Спасибо и удачи вам!!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs406921.vk.me/v406921808/51c5/08mxlM2ATlM.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/askerova85">Оксана Аскерова</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                    	<div class="cont-cont">
+                    		<p>Дмитрий, большое спасибо за Ваш профессионализм и метод подачи информации. <br />С Вами учиться легко, а это очень важно. Успехов Вам в жизни и в профессии.</p>
+                    	</div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs9713.vk.me/u38192796/e_fd6ec76d.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/id38192796">Андрей Зубов</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews-slide fc">
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>Спасибо за курс!все было понятно.Жил бы в России и было бы чуть дешевле записался бы еще!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs312231.vk.me/v312231404/7122/qQdXg_ksJ5I.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/zarinzomanu4">Дмитрий Толкачёв</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>За курс - благодарность! Оставил исключительно положительные эмоции. Дима, Ваша заслуга! Легко, позитивно, с юмором, и вместе с тем всё понятно, доступно - то, что нужно для начинающих и сомневающихся. Спасибо!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs419131.vk.me/v419131721/437f/pbL2SVarxvo.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/yuliya.egorova">Юлия Егорова</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                      <div class="cont-cont">
+                      	<p>Дима Лаврик - огромное спасибо за то что Вы делаете! <br />Всё понятно и доходчиво, обязательно вернусь к Вам в будущем для дальнейшего обучения!</br>Спасибо и удачи!!!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs9901.vk.me/u86598575/e_d9222766.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/id86598575">Cofx Cofx</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-cite">
+                    <div class="cont">
+                    	<div class="cont-cont">
+                    		<p>Спасибо большое за данный курс! Вообще, я учусь на юридическом факультете, но желание каким-либо образом узнать основы программирования было всегда. Как-никак грядет, а точней уже в полном разгаре, век выскоких технологий. И каждый высококвалифицированный специалист любой отрасли должен идти в ногу со временем. Вот и я решила не отставать. К великому удивлению, онлайн-уроки шли в двустрононем порядке, т.е. и преподаватель "видел" учеников, и мы его. Мы могли задавать вопросы, а Дмитрий отвечал на них. Как преподавал Дмитрий Лаврик мне понравилось, ведь он объяснял доступным языком, без лишнего перегруза терминологией. Даже мне, гуманитарию до кончиков ногтей, было все понятно. Естественно, были трудности.. И алгоритм не могла верный составить, и код составить.. Но! Преподаватель на уроке разбирал подробно с нами все задания, предлагая несколько вариантов верных ответов. Мне кажется, что такие курсы просто необходимы. Пройдя самый первый, я теперь всерьез подумываю, а не пойти ли на дальнейшие курсы программирования и связать свою профессиональную деятельность с компьютерными преступлениями. Но, пожалуй, в этот раз хотелось бы пройти курсы в "живой" аудитории, не в онлайн-формате. Т.к. были перебои с интернетом, и либо картинка висла, либо не было слышно звук. Я бы с удовольствием прошла курсы в Вашей школе, но живу не в Москве.. Это грустно.. Но ничего страшного! Желаю вашей школе дальнейших успехов! Спасибо за такой опыт! :)</p>
+                    	</div>
+                    </div>
+                  </div>
+                  <div class="reviews-author fc">
+                    <div class="pic">
+                      <img src="http://cs409516.vk.me/v409516072/5a8a/m3waQSeF4JM.jpg"/>
+                    </div>
+                    <div class="descr">
+                      <div class="name"><a target="_blank" href="http://vk.com/malika_r">Малика Рахимова</a></div>
                     </div>
                   </div>
                 </div>

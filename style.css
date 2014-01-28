@@ -2142,6 +2142,30 @@ dl:after,
   cursor:default;
 }
 
+.reviews-lister .prev,
+.reviews-lister .next {
+  float:left;
+  color:#5ab8a4;
+  font-size:13px;
+  padding:0 30px;
+  cursor:pointer;
+}
+
+.reviews-lister .prev span,
+.reviews-lister .next span {
+  text-decoration:underline;
+  padding:0 15px;
+}
+
+.reviews-lister .btn-inact {
+  color:#ccc;
+  cursor:default;
+}
+
+.reviews-lister .btn-inact span {
+  text-decoration:none;
+}
+
 .reviews-slide {
   margin:0 -50px 0 0;
 }
@@ -2155,8 +2179,8 @@ dl:after,
 
 .reviews-cite {
   font-weight:300;
-  font-size:18px;
-  line-height:24px;
+  font-size:16px;
+  line-height:23px;
   width:481px;
   height:133px;
   padding-top:33px;
@@ -2165,9 +2189,42 @@ dl:after,
 }
 
 .reviews-cite .cont {
-  height:96px;
+  height:92px;
   overflow:hidden;
   margin:0 33px 0 33px;
+  position:relative;
+}
+
+.cite-popup {
+  width:650px;
+}
+
+.cite-popup .close {
+  right:15px;
+  top:15px;
+}
+
+.cite-popup .tooltip-cont {
+  padding:25px 60px 25px 30px;
+}
+
+.cite-expandable .cont {
+  cursor:pointer;
+}
+
+.cite-expandable .cont:hover {
+  color:#5ab8a4;
+  text-decoration:underline;
+}
+
+.cite-expandable .cont-cont:after {
+  content:"";
+  width:112px;
+  height:23px;
+  background:url(images/cite-fade.png);
+  position:absolute;
+  right:0;
+  bottom:0;
 }
 
 .reviews-author {
@@ -2175,10 +2232,10 @@ dl:after,
 }
 
 .reviews-author .pic {
-  width:52px;
-  height:52px;
-  float:left;
-  margin:0 15px 0 0;
+  width: 52px;
+  height: 52px;
+  float: left;
+  margin: 0 9px 0 0;
 }
 
 .reviews-author .pic img {
@@ -2192,13 +2249,15 @@ dl:after,
 }
 
 .reviews-author .descr {
-  overflow:hidden;
-  padding:8px 0 0 0;
+  float: left;
+  padding: 18px 0 0 0;
 }
 
 .reviews-author .name {
-  font-size:15px;
-  line-height:19px;
+  font-size: 15px;
+  line-height: 19px;
+  background: url(images/ico-vk.png) 0 6px no-repeat;
+  padding: 0 0 0 25px;
 }
 
 .reviews-author .name a,

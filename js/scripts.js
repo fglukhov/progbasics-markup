@@ -23,8 +23,13 @@ $(window).scroll(function() {
 
 $(document).ready(function () {
 
+  $(".reviews-cite").each(function() {
+    if ($(this).find(".cont-cont").height() > 92) {
+      $(this).addClass("cite-expandable");
+      $(this).citePopup();
+    }
+  });
   
-
   $(".main-menu a").click(function() {
     
     $("html,body").animate({
@@ -347,7 +352,7 @@ function closePopup() {
 function pupMakeup() {
   var popup = $(".popup-act");
   var pupTop = $(window).scrollTop() + ($(window).height() - popup.outerHeight(true))/2;
-  if (pupTop < 20) pupTop = 20;
+  if (pupTop < $(window).scrollTop() + 50) pupTop = $(window).scrollTop() + 50;
   $(".tint").css("height",$(window).height()).css("width",$("body").width());
   if (!popup.hasClass("price-popup")) {
     popup.css("top",pupTop).css("left",($(window).width()-popup.outerWidth(true))/2 - 20);
@@ -659,28 +664,100 @@ function programCalendar() {
   }
 })( jQuery );
 
+(function( jQuery ) {
+  jQuery.fn.citePopup = function() {
+    
+    $(this).click(function(){
+    
+      var trigger = $(this);
+      
+      trigger.addClass("trigger-act");
+    
+      $(".tooltip-popup").not(".way-tooltip-popup").each(function() {
+        $(this).fadeOut(150,function() {
+          $(this).remove();
+        })
+      });
+    
+      var $tooltip = $("<div class='popup tooltip-popup cite-popup popup-act' />");
+      
+      $tooltip.html("<div class='tooltip-cont'><div class='close'></div>"+trigger.html()+"</div>");
+      
+      $("body").append("<div class='tint' />");
+      $("body").append($tooltip);
+      
+      $tooltip.fadeIn(150);
+      
+      
+      
+      pupMakeup();
+      
+      $tooltip.find(".close").click(function() {
+        $tooltip.fadeOut(150,function() {
+          $tooltip.remove();
+          $(".tooltip-custom").removeClass("trigger-act");
+          
+        })
+        $(".tint").fadeOut(150,function() {
+          $(".tint").remove();
+        })
+      });
+    
+    });
+    
+    
+  }
+})( jQuery );
+
+
 function reviewsSlider() {
   var slides = $(".reviews-slide");
   var lister = $(".reviews-lister");
   
   var sliderSize = slides.length;
   
+  lister.append("<div class='prev'>&larr;<span>Предыдущие</span></div>")
   for (i=0;i<sliderSize;i++) {
     lister.append("<div class='item' />");
   }
+  lister.append("<div class='next'><span>Следующие</span>&rarr;</div>")
   
   lister.find(".item").eq(0).addClass("act");
+  
   
   slides.hide();
   
   slides.eq(0).show().addClass("slide-act");
+  
+  var prev = lister.find(".prev");
+  var next = lister.find(".next");
+  
+  prev.addClass("btn-inact")
   
   lister.find(".item").click(function() {
     lister.find(".item").removeClass("act");
     slides.removeClass("slide-act").hide();
     slides.eq($(this).prevAll(".item").length).fadeIn(250).addClass("slide-act");
     $(this).addClass("act");
+    if (!lister.find(".act").next(".item").length) {
+      next.addClass("btn-inact")
+    } else {
+      next.removeClass("btn-inact")
+    }
+    if (!lister.find(".act").prev(".item").length) {
+      prev.addClass("btn-inact")
+    } else {
+      prev.removeClass("btn-inact")
+    }
   });
+  
+  prev.on("click",function() {
+    lister.find(".act").prev(".item").click();
+  })
+  
+  next.on("click",function() {
+    lister.find(".act").next(".item").click();
+  })
   
 }
 
