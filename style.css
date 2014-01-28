@@ -17,6 +17,7 @@ body, html {
   line-height:20px;
   color:#434444;
   min-width:1020px;
+  height:100%;
 }
 
 p {
@@ -2504,7 +2505,7 @@ dl:after,
 
 .pay-block {
   background:#eeebe3;
-  padding:34px 0 0 34px;
+  padding:34px 0 30px 34px;
 }
 
 .pay-form {
@@ -2678,9 +2679,23 @@ dl:after,
 }
 
 .body-thanks .footer {
-  padding:20px 0 20px 0;
+  padding:0;
 }
 
 .body-thanks .footer-bottom {
-  padding:5px 0 19px 0;
+  padding:25px 0 39px 0;
 }
+
+.body-thanks .top-wrap {min-height: 100%;
+  background:#eeebe3;
+}
+
+.body-thanks .top-main {
+  overflow:auto;
+	padding-bottom: 90px;
+}
+
+.body-thanks .footer {position: relative;
+	margin-top: -90px !important;
+	height: 90px !important;
+	clear:both !important;}
