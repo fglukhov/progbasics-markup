@@ -2480,7 +2480,10 @@ dl:after,
 }
 
 .thanks-header {
-  background:#60b1ca url(images/thanks-header-bg.png) center 0 no-repeat;
+  background-color:#60b1ca;
+  background-image:url(images/thanks-header-bg.png), url(images/thanks-header-bg-2.png);
+  background-position:center bottom, 0 bottom;
+  background-repeat:no-repeat, repeat-x;
   height:220px;
 }
 
@@ -2501,7 +2504,7 @@ dl:after,
 
 .pay-block {
   background:#eeebe3;
-  padding:34px 0;
+  padding:34px 0 0 34px;
 }
 
 .pay-form {
