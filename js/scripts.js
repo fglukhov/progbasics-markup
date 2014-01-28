@@ -23,6 +23,11 @@ $(window).scroll(function() {
 
 $(document).ready(function () {
 
+  $(".pay-form label").click(function() {
+    $(".pay-form .act").removeClass("act");
+    $(this).parents(".form-item").addClass("act");
+  });
+
   $(".reviews-cite").each(function() {
     if ($(this).find(".cont-cont").height() > 92) {
       $(this).addClass("cite-expandable");
