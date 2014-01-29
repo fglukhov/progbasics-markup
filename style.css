@@ -190,6 +190,7 @@ dl:after,
   -webkit-text-shadow: 0 1px 0 #828282;
   -moz-text-shadow: 0 1px 0 #828282;
   text-shadow: 0 1px 0 #828282;
+  border-bottom:1px solid #ccc;
 }
 
 .center-wrapper {
@@ -776,6 +777,14 @@ dl:after,
   text-transform: uppercase;
 }
 
+.sign-form-badge u {
+  text-decoration:none;
+}
+
+.sign-form-badge:hover u {
+  text-decoration:underline;
+}
+
 .sign-form-badge span {
   font-size: 26px;
   line-height: 31px;
@@ -1279,10 +1288,11 @@ dl:after,
 
 .course-descr-teacher {
   float: right;
-  width: 163px;
+  width: 154px;
   margin: 17px 0 0 40px;
   border-left: 1px solid #e1f0f4;
-  padding: 0 0 64px 32px;
+  padding: 0 9px 64px 32px;
+  text-align:center;
 }
 
 .course-descr-teacher h3 {
@@ -1294,7 +1304,7 @@ dl:after,
 
 .course-descr-teacher .pic {
   text-align: center;
-  padding: 0 9px 11px 0;
+  padding: 0 0 11px 0;
 }
 
 .course-descr-teacher .name {

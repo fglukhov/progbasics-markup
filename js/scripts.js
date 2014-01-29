@@ -24,6 +24,8 @@ $(window).scroll(function() {
 $(document).ready(function () {
 
   $(".pay-form label").click(function() {
+    $(".pay-form .button-disabled").removeClass("button-disabled");
+    $(".pay-form .form-submit").prop('disabled',false);
     $(".pay-form .act").removeClass("act");
     $(this).parents(".form-item").addClass("act");
   });
@@ -87,7 +89,9 @@ $(document).ready(function () {
 
   $(".tooltip-custom").tooltipCustom();
   
-  programCalendar();
+  if ($(".program-calendar").length) {
+    programCalendar();
+  }
   
   $("#way-slider").slider({
     step: 1,
@@ -188,8 +192,9 @@ $(document).ready(function () {
     });
   });
   
-  
-  $(".main-slider").mainSlider();
+  if ($(".main-slider").length) {
+    $(".main-slider").mainSlider();
+  }
 
   $("input:checkbox").each(function() {
     if ($(this).is(":disabled")) {
