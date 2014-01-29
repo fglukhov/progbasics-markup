@@ -2693,7 +2693,7 @@ dl:after,
 }
 
 .body-thanks .footer-bottom {
-  padding:25px 0 39px 0;
+  padding:25px 0 10px 0;
 }
 
 .body-thanks .top-wrap {min-height: 100%;
@@ -2702,10 +2702,42 @@ dl:after,
 
 .body-thanks .top-main {
   overflow:auto;
-	padding-bottom: 90px;
+	padding-bottom: 107px;
 }
 
 .body-thanks .footer {position: relative;
-	margin-top: -90px !important;
-	height: 90px !important;
+	margin-top: -107px !important;
+	height: 107px !important;
 	clear:both !important;}
+  
+.secret-l {
+  float: left;
+  width: 417px;
+  padding: 18px 0 0 0;
+  margin: 0 0 0 -4px;
+}
+
+.secret-r {
+  padding:72px 0 0 0;
+  overflow:hidden;
+}
+
+.secret-r h2 {
+  margin:0 0 32px 0;
+}
+
+.footer-copy {
+  padding:5px 0 0 0;
+  color:#818181;
+  font-size:13px;
+  text-align:center;
+}
+
+.footer-copy a,
+.footer-copy a:visited {
+  color:#818181;
+}
+
+.body-thanks .footer-copy {
+  padding:5px 0 20px 0;
+}
