@@ -644,18 +644,18 @@ dl:after,
 }
 
 .main-slider .slide-2 .pic img {
-  left: 80px;
-  top: 74px;
-}
-
-.main-slider .slide-3 .pic img {
   left: 119px;
   top: 64px;
 }
 
-.main-slider .slide-4 .pic img {
+.main-slider .slide-3 .pic img {
   left: 94px;
   top: 72px;
+}
+
+.main-slider .slide-4 .pic img {
+  left: 80px;
+  top: 74px;
 }
 
 .main-slider .slide-5 .pic img {
