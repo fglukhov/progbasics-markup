@@ -107,6 +107,7 @@ $(document).ready(function () {
     },
     stop: function(event, ui) {
       pos = ui.value;
+      $(".way-steps .step").removeClass("act");
       
       $(".way-tooltips .tooltip-popup").fadeOut(150);
       
@@ -116,6 +117,7 @@ $(document).ready(function () {
           marginBottom: 0,
           opacity:1
         },300);
+        $(".way-steps .step-1").addClass("act");
       }
       
       if (pos >= 50 && pos < 150) {
@@ -124,6 +126,7 @@ $(document).ready(function () {
           marginBottom: 0,
           opacity:1
         },300);
+        $(".way-steps .step-2").addClass("act");
       }
       
       if (pos >= 150 && pos < 250) {
@@ -132,6 +135,7 @@ $(document).ready(function () {
           marginBottom: 0,
           opacity:1
         },300);
+        $(".way-steps .step-3").addClass("act");
       }
       
       if (pos >= 250 && pos < 350) {
@@ -140,6 +144,7 @@ $(document).ready(function () {
           marginBottom: 0,
           opacity:1
         },300);
+        $(".way-steps .step-4").addClass("act");
       }
       
       if (pos >= 350 && pos < 450) {
@@ -148,6 +153,7 @@ $(document).ready(function () {
           marginBottom: 0,
           opacity:1
         },300);
+        $(".way-steps .step-5").addClass("act");
       }
       
       if (pos >= 450) {

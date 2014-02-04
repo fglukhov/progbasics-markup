@@ -1441,6 +1441,52 @@ dl:after,
   background:url(images/way-slider-range.png) 0 0 no-repeat;
 }
 
+.way-steps {
+  position: absolute;
+  width: 660px;
+  height: 28px;
+  background: url(images/steps-bg.png) 0 0 no-repeat;
+  top: 226px;
+  left: 180px;
+}
+
+.way-steps .step {
+  position:absolute;
+  top:-37px;
+  width:29px;
+  height:28px;
+  text-align:center;
+  font-size:12px;
+  line-height:27px;
+  color:#9f9f9f;
+  background:url(images/steps-round.png) 0 0 no-repeat;
+}
+
+.way-steps .act {
+  color:#595959;
+  background-position:-30px 0;
+}
+
+.way-steps .step-1 {
+  left:-14px;
+}
+
+.way-steps .step-2 {
+  left:150px;
+}
+
+.way-steps .step-3 {
+  left:314px;
+}
+
+.way-steps .step-4 {
+  left:478px;
+}
+
+.way-steps .step-5 {
+  left:642px;
+}
+
 #test {
   position:fixed;
   background:#333;
@@ -1456,7 +1502,7 @@ dl:after,
 
 .way-block .tooltip-popup {
   width:350px;
-  bottom:-112px;
+  bottom:-82px;
 }
 
 .way-block .tooltip-cont {
