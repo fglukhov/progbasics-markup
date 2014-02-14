@@ -518,10 +518,6 @@ jQuery.extend(jQuery.validator.messages, {
         listerItems.eq(1).click();
       })
       
-      
-      
-      
-      
       nextBtn.click(function() {
         curIndex = parseInt(slider.find(".slide-act").prevAll(".slide").length)
         if (curIndex < sliderSize-1) {
