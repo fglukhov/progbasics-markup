@@ -2531,7 +2531,7 @@ dl:after,
   color:#fff;
   z-index:10;
   box-shadow:0 0 15px 0 rgba(0,0,0,.2);
-  display:none !important;
+  display:none;
   z-index:60;
 }
 
