@@ -206,7 +206,7 @@ dl:after,
 
 .header-top {
   position:relative;
-  padding:20px 0 26px 0;
+  padding:20px 0 20px 0;
 }
 
 .header-phone {
@@ -274,12 +274,12 @@ dl:after,
 
 .site-name {
   position:relative;
-  padding:28px 0 0 0;
+  padding:26px 0 0 0;
 }
 
 .site-name-cat {
   width:167px;
-  height:42px;
+  height:41px;
   background:url(images/site-name-cat-bg.png) 0 0 no-repeat;
   text-transform:uppercase;
   color: #fff;
@@ -296,11 +296,12 @@ dl:after,
 
 .site-name-name {
   text-align:center;
-  font-size:58px;
-  line-height:58px;
+  font-size:44px;
+  line-height:44px;
   color:#ff7857;
   font-weight:300;
   margin:-11px 0 0 0;
+  letter-spacing:.02em;
 }
 
 .main-menu-wrapper {
@@ -522,11 +523,16 @@ dl:after,
 }
 
 .main-slider .lister .item {
-  display:inline-block;
-  vertical-align:middle;
-  padding:19px 46px;
-  background:url(images/slider-lister-vr.png) 0 center no-repeat;
-  cursor:pointer;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 19px 34px;
+  background: url(images/slider-lister-vr.png) 0 center no-repeat;
+  cursor: pointer;
+  text-align: left;
+}
+
+.main-slider .lister .item .ico-video {
+  margin:0 7px -2px;
 }
 
 .main-slider .lister .cont {
@@ -605,6 +611,10 @@ dl:after,
   opacity: 1;
 }
 
+.main-slider .button-inact {
+  display:none;
+}
+
 .main-slider .slide-1 {
   background:#61b2cb url(images/slide-1-bg.png) center bottom no-repeat;
 }
@@ -623,6 +633,41 @@ dl:after,
 
 .main-slider .slide-5 {
   background:#5dc8b1 url(images/slide-2-bg.png) center bottom no-repeat;
+}
+
+.main-slider .slide-video {
+  background:#60b1ca url(images/video-slide-bg.png) center -7px no-repeat;
+}
+
+.main-slider .video-wrapper {
+  float:right;
+  width:554px;
+  height:311px;
+  margin:29px 57px 0 0;
+  background:url(images/video-slide-notebook.png) 0 0 no-repeat;
+  position:relative;
+  z-index:10;
+}
+
+.main-slider .slide-video .descr {
+  float: left;
+  width: 389px;
+  padding: 48px 0 0 0;
+}
+
+.main-slider .slide-video-cont {
+  margin:22px 0 0 20px;
+}
+
+.main-slider .go-button {
+  width:76px;
+  height:169px;
+  background:url(images/slider-go-button.png) 0 0 no-repeat;
+  cursor:pointer;
+  position:absolute;
+  z-index:11;
+  right:147px;
+  top:109px;
 }
 
 .main-slider .pic {
@@ -2486,7 +2531,7 @@ dl:after,
   color:#fff;
   z-index:10;
   box-shadow:0 0 15px 0 rgba(0,0,0,.2);
-  display:none;
+  display:none !important;
   z-index:60;
 }
 

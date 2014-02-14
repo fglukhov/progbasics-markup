@@ -455,8 +455,17 @@ jQuery.extend(jQuery.validator.messages, {
     
     if (sliderSize > 1) {
     
+      slider.find(".slides").after("<div class='next button-inact' />");
+      slider.find(".slides").after("<div class='prev button-inact' />");
+      slider.find(".slides").after("<div class='go-button' />");
+      
+      var prevBtn = slider.find(".prev");
+      var nextBtn = slider.find(".next");
+      var goBtn = slider.find(".go-button");
+    
       listerItems.on("click",function () {
         if (!$(this).hasClass("act")) {
+          goBtn.fadeOut(150)
           listerItems.removeClass("act");
           $(this).addClass("act");
           slides.fadeOut(500).removeClass("slide-act");
@@ -466,6 +475,18 @@ jQuery.extend(jQuery.validator.messages, {
           
           sliderAnimate(slider.find(".slide-act").prevAll(".slide").length);
           
+          if (!listerItems.filter(".act").next().length) {
+            nextBtn.addClass("button-inact")
+          } else {
+            nextBtn.removeClass("button-inact")
+          }
+          
+          if (!listerItems.filter(".act").prev().length) {
+            prevBtn.addClass("button-inact")
+          } else {
+            prevBtn.removeClass("button-inact")
+          }
+          
         }
       });
       
@@ -473,30 +494,34 @@ jQuery.extend(jQuery.validator.messages, {
         // $(this).click();
       // });
       
+      goBtn.on("click",function() {
+        $(this).fadeOut(150);
+        listerItems.eq(1).click();
+      });
+      
       slides.bind("click",function () {
         if (listerItems.filter(".act").next().length) {
-          listerItems.filter(".act").next().click();
+          //listerItems.filter(".act").next().click();
         } else {
-          listerItems.eq(0).click();
+          //listerItems.eq(0).click();
         }
+        
       });
       
       
       
-      slider.find(".slides").after("<div class='next' />");
-      slider.find(".slides").after("<div class='prev' />");
       
-      var prevBtn = slider.find(".prev");
-      var nextBtn = slider.find(".next");
       
       nextBtn.click(function() {
         curIndex = parseInt(slider.find(".slide-act").prevAll(".slide").length)
         if (curIndex < sliderSize-1) {
           curIndex++;
           lister.find(".item").eq(curIndex).click();
+          prevBtn.removeClass("button-inact")
         } else {
-          lister.find(".item").eq(0).click();
+          //lister.find(".item").eq(0).click();
         }
+        
       });
       
       prevBtn.click(function() {
@@ -504,14 +529,15 @@ jQuery.extend(jQuery.validator.messages, {
         if (curIndex > 0) {
           curIndex--;
           lister.find(".item").eq(curIndex).click();
+          nextBtn.removeClass("button-inact")
         } else {
-          lister.find(".item").eq(slides.length-1).click();
+          //lister.find(".item").eq(slides.length-1).click();
         }
       });
       
     }
     
-    sliderAnimate(0);
+    //sliderAnimate(0);
     
   }
 })( jQuery );
@@ -778,65 +804,72 @@ function reviewsSlider() {
 }
 
 function sliderAnimate(index) {
-  if (index == 0) {
-    $(".slide-1 .pic img").transition({ 
-      perspective: '500px',
-      rotateY: '180deg'
-    },10,function() {
+
+  index--;
+
+  if (index >=0) {
+  
+    if (index == 0) {
       $(".slide-1 .pic img").transition({ 
         perspective: '500px',
-        rotateY: '0deg'
-      },1000);
-    });
-  }
-  
-  if (index == 1) {
-    $(".slide-2 .pic img").transition({ 
-      perspective: '500px',
-      rotateY: '180deg'
-    },10,function() {
+        rotateY: '180deg'
+      },10,function() {
+        $(".slide-1 .pic img").transition({ 
+          perspective: '500px',
+          rotateY: '0deg'
+        },1000);
+      });
+    }
+    
+    if (index == 1) {
       $(".slide-2 .pic img").transition({ 
         perspective: '500px',
-        rotateY: '0deg'
-      },1000);
-    });
-  }
-  
-  if (index == 2) {
-    $(".slide-3 .pic img").transition({ 
-      perspective: '500px',
-      rotateY: '180deg'
-    },10,function() {
+        rotateY: '180deg'
+      },10,function() {
+        $(".slide-2 .pic img").transition({ 
+          perspective: '500px',
+          rotateY: '0deg'
+        },1000);
+      });
+    }
+    
+    if (index == 2) {
       $(".slide-3 .pic img").transition({ 
         perspective: '500px',
-        rotateY: '0deg'
-      },1000);
-    });
-  }
-  
-  if (index == 3) {
-    $(".slide-4 .pic img").transition({ 
-      perspective: '500px',
-      rotateY: '180deg'
-    },10,function() {
+        rotateY: '180deg'
+      },10,function() {
+        $(".slide-3 .pic img").transition({ 
+          perspective: '500px',
+          rotateY: '0deg'
+        },1000);
+      });
+    }
+    
+    if (index == 3) {
       $(".slide-4 .pic img").transition({ 
         perspective: '500px',
-        rotateY: '0deg'
-      },1000);
-    });
+        rotateY: '180deg'
+      },10,function() {
+        $(".slide-4 .pic img").transition({ 
+          perspective: '500px',
+          rotateY: '0deg'
+        },1000);
+      });
+      
+    }
     
-  }
-  
-  if (index == 4) {
-    $(".slide-5 .pic img").transition({ 
-      perspective: '500px',
-      rotateY: '180deg'
-    },10,function() {
+    if (index == 4) {
       $(".slide-5 .pic img").transition({ 
         perspective: '500px',
-        rotateY: '0deg'
-      },1000);
-    });
+        rotateY: '180deg'
+      },10,function() {
+        $(".slide-5 .pic img").transition({ 
+          perspective: '500px',
+          rotateY: '0deg'
+        },1000);
+      });
+      
+    }
     
   }
   
