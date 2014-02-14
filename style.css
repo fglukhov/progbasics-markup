@@ -525,25 +525,31 @@ dl:after,
 .main-slider .lister .item {
   display: inline-block;
   vertical-align: middle;
-  padding: 19px 34px;
+  padding: 0 0;
   background: url(images/slider-lister-vr.png) 0 center no-repeat;
   cursor: pointer;
   text-align: left;
 }
 
 .main-slider .lister .item .ico-video {
-  margin:0 7px -2px;
+  margin: 0 7px -16px 0;
+  position: relative;
+  top: -6px;
 }
 
 .main-slider .lister .cont {
-  zoom:1;
-  opacity:.6;
-  filter:alpha(opacity=60);
+  zoom: 1;
+  opacity: .6;
+  filter: alpha(opacity=60);
   -webkit-transition: opacity .1s ease-in-out;
   -moz-transition: opacity .1s ease-in-out;
   -ms-transition: opacity .1s ease-in-out;
   -o-transition: opacity .1s ease-in-out;
   transition: opacity .1s ease-in-out;
+  display: table-cell;
+  height: 70px;
+  vertical-align: middle;
+  padding: 0 34px;
 }
 
 .main-slider .lister .item:first-child {
@@ -557,6 +563,9 @@ dl:after,
   filter:alpha(opacity=100);
 }
 
+.main-slider .lister .act .cont {
+  background:url(images/tint-2.png);
+}
 .main-slider .prev {
   position:absolute;
   left:50%;
@@ -640,19 +649,21 @@ dl:after,
 }
 
 .main-slider .video-wrapper {
-  float:right;
+  float:left;
   width:554px;
   height:311px;
-  margin:29px 57px 0 0;
+  margin:29px 0 0 0;
   background:url(images/video-slide-notebook.png) 0 0 no-repeat;
   position:relative;
   z-index:10;
 }
 
 .main-slider .slide-video .descr {
-  float: left;
-  width: 389px;
-  padding: 48px 0 0 0;
+  float: right;
+  width: 410px;
+  padding: 51px 0 0 0;
+  font-size:20px;
+  line-height:25px;
 }
 
 .main-slider .slide-video-cont {
@@ -660,14 +671,15 @@ dl:after,
 }
 
 .main-slider .go-button {
-  width:76px;
-  height:169px;
+  width:82px;
+  height:176px;
   background:url(images/slider-go-button.png) 0 0 no-repeat;
   cursor:pointer;
   position:absolute;
   z-index:11;
-  right:147px;
+  left:50%;
   top:109px;
+  margin-left:444px;
 }
 
 .main-slider .pic {
@@ -2831,4 +2843,28 @@ dl:after,
 
 .body-thanks .footer-copy {
   padding:5px 0 20px 0;
+}
+
+.main-slider-alt .go-button {
+  display:none !important;
+}
+
+.go-button-alt {
+  width:255px;
+  height:44px;
+  background:url(images/go-button-alt-bg.png) 0 0 no-repeat;
+  cursor:pointer;
+  font-size:20px;
+  font-weight:600;
+  margin:25px 0 0 0;
+}
+
+.go-button-alt span {
+  display:block;
+  padding:10px 0 0 20px;
+}
+
+.main-slider-alt .slide-video .descr {
+  width: 390px;
+  padding: 41px 0 0 0;
 }

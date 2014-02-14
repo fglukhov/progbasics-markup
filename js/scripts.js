@@ -465,7 +465,13 @@ jQuery.extend(jQuery.validator.messages, {
     
       listerItems.on("click",function () {
         if (!$(this).hasClass("act")) {
-          goBtn.fadeOut(150)
+          if ($(this).prevAll().length > 0) {
+            goBtn.fadeOut(150);
+          } else {
+            goBtn.fadeIn(150);
+            prevBtn.addClass("button-inact")
+            nextBtn.addClass("button-inact")
+          }
           listerItems.removeClass("act");
           $(this).addClass("act");
           slides.fadeOut(500).removeClass("slide-act");
@@ -478,7 +484,7 @@ jQuery.extend(jQuery.validator.messages, {
           if (!listerItems.filter(".act").next().length) {
             nextBtn.addClass("button-inact")
           } else {
-            nextBtn.removeClass("button-inact")
+            if ($(this).prevAll().length > 0) nextBtn.removeClass("button-inact")
           }
           
           if (!listerItems.filter(".act").prev().length) {
@@ -508,6 +514,10 @@ jQuery.extend(jQuery.validator.messages, {
         
       });
       
+      $(".go-button-alt").click(function() {
+        listerItems.eq(1).click();
+      })
+      
       
       
       
@@ -517,7 +527,7 @@ jQuery.extend(jQuery.validator.messages, {
         if (curIndex < sliderSize-1) {
           curIndex++;
           lister.find(".item").eq(curIndex).click();
-          prevBtn.removeClass("button-inact")
+          //prevBtn.removeClass("button-inact")
         } else {
           //lister.find(".item").eq(0).click();
         }
@@ -529,7 +539,7 @@ jQuery.extend(jQuery.validator.messages, {
         if (curIndex > 0) {
           curIndex--;
           lister.find(".item").eq(curIndex).click();
-          nextBtn.removeClass("button-inact")
+          //nextBtn.removeClass("button-inact")
         } else {
           //lister.find(".item").eq(slides.length-1).click();
         }
