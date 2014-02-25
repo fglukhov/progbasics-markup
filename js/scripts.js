@@ -19,9 +19,57 @@ $(window).scroll(function() {
       $(".fixed-menu").fadeOut(150)
     }
   }
+  
+  var sTop = $(window).scrollTop();
+  
+  $("a.anchor").each(function() {
+    if (Math.abs(sTop - $(this).offset().top) < 300) {
+      $(".main-menu a").removeClass("act");
+      $(".main-menu a[href='#"+$(this).attr("name")+"']").addClass("act");
+    }
+  });
+  
 });
 
 $(document).ready(function () {
+
+  animateFace();
+
+  if ($(".cases-roundabout").length) {
+    $(".cases-roundabout").roundabout({
+      minZ:10,
+      maxZ:30,
+      minScale:.1,
+      minOpacity:0,
+      clickToFocusCallback: function() {
+        $(".cases-roundabout .roundabout-in-focus .descr").fadeIn(250);
+      },
+      
+    });
+  }
+  
+  $(".cases-roundabout li").first().find(".descr").show();
+  $(".cases-roundabout li").click(function() {
+    if (!$(this).hasClass("roundabout-in-focus")) {
+      $(".cases-roundabout .descr").fadeOut(200);
+    }
+  });
+  
+  $(".cases-slider .prev").click(function() {
+    if ($(".cases-slider .roundabout-in-focus").prev("li").length) {
+      $(".cases-slider .roundabout-in-focus").prev("li").click();
+    } else {
+      $(".cases-slider .cases-roundabout li").last().click();
+    }
+  });
+  
+  $(".cases-slider .next").click(function() {
+    if ($(".cases-slider .roundabout-in-focus").next("li").length) {
+      $(".cases-slider .roundabout-in-focus").next("li").click();
+    } else {
+      $(".cases-slider .cases-roundabout li").first().click();
+    }
+  });
 
   $(".pay-form label").click(function() {
     $(".pay-form .button-disabled").removeClass("button-disabled");
@@ -31,13 +79,20 @@ $(document).ready(function () {
   });
 
   $(".reviews-cite").each(function() {
-    if ($(this).find(".cont-cont").height() > 92) {
+    if ($(this).find(".cont-cont").height() > 120) {
       $(this).addClass("cite-expandable");
       $(this).citePopup();
     }
   });
   
+  $(".cases-slider .descr-content").each(function() {
+    $(this).casePopup();
+  });
+  
   $(".main-menu a").click(function() {
+    
+    $(".main-menu a").removeClass("act");
+    $(this).addClass("act");
     
     $("html,body").animate({
       scrollTop: $("a[name='"+$(this).attr("href").replace("#","")+"']").offset().top - 58
@@ -66,6 +121,11 @@ $(document).ready(function () {
 
   $(".about-carousel .jcarousel").jcarousel({
     scroll: 3,
+    wrap: "circular"
+  });
+  
+  $(".courses-carousel .jcarousel").jcarousel({
+    scroll: 4,
     wrap: "circular"
   });
 
@@ -350,6 +410,16 @@ function validateForms() {
         }
       });
     }
+    
+    $(document).mouseup(function (e) {
+      var container = $("form");
+
+      if (!container.is(e.target) // if the target of the click isn't the container...
+          && container.has(e.target).length === 0) // ... nor a descendant of the container
+      {
+          $(".error-wrapper").remove();
+      }
+    });
     
     
   });  
@@ -757,6 +827,51 @@ function programCalendar() {
   }
 })( jQuery );
 
+(function( jQuery ) {
+  jQuery.fn.casePopup = function() {
+    
+    $(this).click(function(){
+    
+      var trigger = $(this);
+      
+      trigger.addClass("trigger-act");
+    
+      $(".tooltip-popup").not(".way-tooltip-popup").each(function() {
+        $(this).fadeOut(150,function() {
+          $(this).remove();
+        })
+      });
+    
+      var $tooltip = $("<div class='popup tooltip-popup cite-popup case-popup popup-act' />");
+      
+      $tooltip.html("<div class='tooltip-cont'><div class='close'></div>"+trigger.find(".expandable").html()+"</div>");
+      
+      $("body").append("<div class='tint' />");
+      $("body").append($tooltip);
+      
+      $tooltip.fadeIn(150);
+      
+      
+      
+      pupMakeup();
+      
+      $tooltip.find(".close").click(function() {
+        $tooltip.fadeOut(150,function() {
+          $tooltip.remove();
+          $(".tooltip-custom").removeClass("trigger-act");
+          
+        })
+        $(".tint").fadeOut(150,function() {
+          $(".tint").remove();
+        })
+      });
+    
+    });
+    
+    
+  }
+})( jQuery );
+
 
 function reviewsSlider() {
   var slides = $(".reviews-slide");
@@ -880,3 +995,156 @@ function sliderAnimate(index) {
   }
   
 }
+
+function animateFace() {
+
+	var designerImg 	= $('#bad-img');
+	var coderImg 		= $('#good-img');
+	var designerHover	= $('#designer');
+	var coderHover		= $('#coder');
+	var badDesc	= $('#bad-text');
+	var goodDesc		= $('#good-text');	
+	var goodDesc2		= $('.good-descr');	
+	var badDesc2		= $('.bad-descr');	
+	var designerArrow	= $('#designer-arrow');
+	var coderArrow		= $('#coder-arrow');		
+	var designerBg		= $('#designer-bg');
+	var coderBg			= $('#coder-bg');
+	var face 			= $('#face');
+	var section 		= $('#section');
+	var duration 		= 500;
+
+	var mouseX = 0;
+	var relMouseX = 900;
+	var xp = 900;
+	frameRate =  30;
+	timeInterval = Math.round( 1000 / frameRate );		
+
+	// Firstly animate the bottom content onto the page
+	//animateContent();
+
+	section.mouseenter(function(e){
+
+		// Get mouse position
+		section.mousemove(function(e){
+		   	// raw mouse position
+		   	mouseX = e.pageX;
+
+		   	// mouse position relative to face div
+		   	relMouseX = mouseX - face.offset().left;
+
+		});
+		
+		// Animate the face based on mouse movement
+		loop = setInterval(function(){
+
+			// zeno's paradox dampens the movement
+			xp += (relMouseX - xp) / 12;
+
+			designerImg.css({width:900 + (900 - xp) * 2.5, left: (900 - xp) * 0.4});
+      coderImg.css({width:900 + (xp - 900) * 2.5, right: -(900 - xp) * 0.4});
+
+      //designerBg.css({left: (900 - xp) * 0.05, opacity: ((1040 - xp)/900)});
+      //coderBg.css({right:  (xp - 900) * 0.05, opacity: (xp/900)});
+      
+      if (Math.abs(xp - 900) > 100) {
+        badDesc.css({opacity:0});
+        goodDesc.css({opacity:0});
+      } else {
+        badDesc.css({opacity: (1 - Math.abs(xp - 900)/900*9)});
+        goodDesc.css({opacity: (1 - Math.abs(xp - 900)/900*9)});
+      }
+      
+      $(".test").html(xp)
+      
+      badDesc2.css({opacity: ((900 - xp)/900)*5});
+      goodDesc2.css({opacity: ((xp-900)/900)*5});
+
+		}, timeInterval );
+
+	}).mouseleave(function(e){ 
+
+		// reset the face to initial state
+		clearInterval(loop);
+		xp 			= 900;
+		mouseX 		= 0;
+		relMouseX 	= 900;
+
+		designerImg.hoverFlow(e.type, {width: 900, left: 0}, duration, 'easeOutQuad');
+		coderImg.hoverFlow(e.type, {width: 900, right: 0}, duration, 'easeOutQuad');
+		goodDesc.hoverFlow(e.type, {opacity: 1}, duration, 'easeOutQuad');
+		badDesc.hoverFlow(e.type, {opacity: 1}, duration, 'easeOutQuad');
+    goodDesc2.hoverFlow(e.type, {opacity: 0}, duration, 'easeOutQuad');
+		badDesc2.hoverFlow(e.type, {opacity: 0}, duration, 'easeOutQuad');
+		coderBg.hoverFlow(e.type, {right:0, opacity: 1}, duration, 'easeOutQuad');
+		designerBg.hoverFlow(e.type, {left:0, opacity: 1}, duration, 'easeOutQuad');
+
+	}); 
+	
+}; 
+
+(function( $ ){
+
+	$.fn.hoverFlow = function(type, prop, speed, easing, callback) {
+		// only allow hover events
+		if ($.inArray(type, ['mouseover', 'mouseenter', 'mouseout', 'mouseleave']) == -1) {
+			return this;
+		}
+	
+		// build animation options object from arguments
+		// based on internal speed function from jQuery core
+		var opt = typeof speed === 'object' ? speed : {
+			complete: callback || !callback && easing || $.isFunction(speed) && speed,
+			duration: speed,
+			easing: callback && easing || easing && !$.isFunction(easing) && easing
+		};
+		
+		// run immediately
+		opt.queue = false;
+			
+		// wrap original callback and add dequeue
+		var origCallback = opt.complete;
+		opt.complete = function() {
+			// execute next function in queue
+			$(this).dequeue();
+			// execute original callback
+			if ($.isFunction(origCallback)) {
+				origCallback.call(this);
+			}
+		};
+		
+		// keep the chain intact
+		return this.each(function() {
+			var $this = $(this);
+		
+			// set flag when mouse is over element
+			if (type == 'mouseover' || type == 'mouseenter') {
+				$this.data('jQuery.hoverFlow', true);
+			} else {
+				$this.removeData('jQuery.hoverFlow');
+			}
+			
+			// enqueue function
+			$this.queue(function() {				
+				// check mouse position at runtime
+				var condition = (type == 'mouseover' || type == 'mouseenter') ?
+					// read: true if mouse is over element
+					$this.data('jQuery.hoverFlow') !== undefined :
+					// read: true if mouse is _not_ over element
+					$this.data('jQuery.hoverFlow') === undefined;
+					
+				// only execute animation if condition is met, which is:
+				// - only run mouseover animation if mouse _is_ currently over the element
+				// - only run mouseout animation if the mouse is currently _not_ over the element
+				if(condition) {
+					$this.animate(prop, opt);
+				// else, clear queue, since there's nothing more to do
+				} else {
+					$this.queue([]);
+				}
+			});
+
+		});
+	};
+
+})( jQuery );
