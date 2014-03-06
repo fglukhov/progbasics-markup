@@ -153,11 +153,16 @@ $(document).ready(function () {
     programCalendar();
   }
   
+  $("#way-tooltip-1").css("bottom",330 + 43 - $(".tooltip-anchor-1").position().top + 20).css("left",$(".tooltip-anchor-1").position().left);
+  $("#way-tooltip-2").css("bottom",330 + 43 - $(".tooltip-anchor-2").position().top + 20).css("left",$(".tooltip-anchor-2").position().left);
+  $("#way-tooltip-3").css("bottom",330 + 43 - $(".tooltip-anchor-3").position().top + 20).css("left",$(".tooltip-anchor-3").position().left);
+  $("#way-tooltip-4").css("bottom",330 + 43 - $(".tooltip-anchor-4").position().top + 20).css("left",$(".tooltip-anchor-4").position().left);
+  
   $("#way-slider").slider({
     step: 1,
     range: "min",
     min: 0,
-    max: 500,
+    max: 900,
     animate: "slow",
     slide: function(event, ui) {
       pos = ui.value;
@@ -169,80 +174,116 @@ $(document).ready(function () {
       pos = ui.value;
       $(".way-steps .step").removeClass("act");
       
-      $(".way-tooltips .tooltip-popup").fadeOut(150);
+      $(".way-tooltips .tooltip-popup").hide();
       
-      if (pos < 50) {
+      if (pos < 150) {
         $( "#way-slider" ).slider( "value", 0 );
+        
         $("#way-tooltip-1").show().css("opacity",0).css("margin-bottom",-55).animate({
           marginBottom: 0,
           opacity:1
         },300);
-        $(".way-steps .step-1").addClass("act");
+        $(".way-slider-wrapper").css("background-position","0 0");
+        $(".way-slider-pic").css("background-position","0 0");
       }
       
-      if (pos >= 50 && pos < 150) {
-        $( "#way-slider" ).slider( "value", 100 );
+      if (pos >= 150 && pos < 450) {
+        $( "#way-slider" ).slider( "value", 300 );
         $("#way-tooltip-2").show().css("opacity",0).css("margin-bottom",-55).animate({
           marginBottom: 0,
           opacity:1
         },300);
-        $(".way-steps .step-2").addClass("act");
+        $(".way-slider-wrapper").css("background-position","0 0");
+        $(".way-slider-pic").css("background-position","0 -294px");
       }
       
-      if (pos >= 150 && pos < 250) {
-        $( "#way-slider" ).slider( "value", 200 );
+      if (pos >= 450 && pos < 750) {
+        $( "#way-slider" ).slider( "value", 600 );
         $("#way-tooltip-3").show().css("opacity",0).css("margin-bottom",-55).animate({
           marginBottom: 0,
           opacity:1
         },300);
-        $(".way-steps .step-3").addClass("act");
+        $(".way-slider-wrapper").css("background-position","0 0");
+        $(".way-slider-pic").css("background-position","0 -588px");
       }
       
-      if (pos >= 250 && pos < 350) {
-        $( "#way-slider" ).slider( "value", 300 );
+      if (pos >= 750) {
+        $( "#way-slider" ).slider( "value", 900 );
         $("#way-tooltip-4").show().css("opacity",0).css("margin-bottom",-55).animate({
           marginBottom: 0,
           opacity:1
         },300);
-        $(".way-steps .step-4").addClass("act");
-      }
-      
-      if (pos >= 350 && pos < 450) {
-        $( "#way-slider" ).slider( "value", 400 );
-        $("#way-tooltip-5").show().css("opacity",0).css("margin-bottom",-55).animate({
-          marginBottom: 0,
-          opacity:1
-        },300);
-        $(".way-steps .step-5").addClass("act");
-      }
-      
-      if (pos >= 450) {
-        $( "#way-slider" ).slider( "value", 500 );
-        $("#way-tooltip-6").show().css("opacity",0).css("margin-bottom",-55).animate({
-          marginBottom: 0,
-          opacity:1
-        },300);
+        $(".way-slider-wrapper").css("background-position","0 -34px");
+        $(".way-slider-pic").css("background-position","0 -882px");
       }
       
     }
   });
   
-  $(".way-block .ico-novice").click(function() {
+  $(".way-block .tooltip-name-1, .way-block .tooltip-anchor-1").click(function() {
     $(".way-tooltip-popup").fadeOut(150);
     $("#way-slider").slider( "value", 0 );
+    $(".way-slider-wrapper").css("background-position","0 0");
     $("#way-tooltip-1").show().css("opacity",0).css("margin-bottom",-55).animate({
       marginBottom: 0,
       opacity:1
     },300);
+    $(".way-slider-pic").css("background-position","0 0");
+  })
+  
+  $(".way-block .tooltip-name-2, .way-block .tooltip-anchor-2").click(function() {
+    $(".way-tooltip-popup").fadeOut(150);
+    $("#way-slider").slider( "value", 300 );
+    $(".way-slider-wrapper").css("background-position","0 0");
+    $("#way-tooltip-2").show().css("opacity",0).css("margin-bottom",-55).animate({
+      marginBottom: 0,
+      opacity:1
+    },300);
+    $(".way-slider-pic").css("background-position","0 0");
+  })
+  
+  $(".way-block .tooltip-name-3, .way-block .tooltip-anchor-3").click(function() {
+    $(".way-tooltip-popup").fadeOut(150);
+    $("#way-slider").slider( "value", 600 );
+    $(".way-slider-wrapper").css("background-position","0 0");
+    $("#way-tooltip-3").show().css("opacity",0).css("margin-bottom",-55).animate({
+      marginBottom: 0,
+      opacity:1
+    },300);
+    $(".way-slider-pic").css("background-position","0 0");
+  })
+  
+  $(".way-block .tooltip-name-4, .way-block .tooltip-anchor-4").click(function() {
+    $(".way-tooltip-popup").fadeOut(150);
+    $("#way-slider").slider( "value", 900 );
+    $(".way-slider-wrapper").css("background-position","0 0");
+    $("#way-tooltip-4").show().css("opacity",0).css("margin-bottom",-55).animate({
+      marginBottom: 0,
+      opacity:1
+    },300);
+    $(".way-slider-pic").css("background-position","0 0");
+  })
+  
+  $(".way-block .ico-novice").click(function() {
+    $(".way-tooltip-popup").fadeOut(150);
+    $("#way-slider").slider( "value", 0 );
+    $(".way-slider-wrapper").css("background-position","0 0");
+    $("#way-tooltip-1").show().css("opacity",0).css("margin-bottom",-55).animate({
+      marginBottom: 0,
+      opacity:1
+    },300);
+    $(".way-slider-pic").css("background-position","0 0");
   })
   
   $(".way-block .ico-guru").click(function() {
     $(".way-tooltip-popup").fadeOut(150);
-    $("#way-slider").slider( "value", 500 );
-    $("#way-tooltip-6").show().css("opacity",0).css("margin-bottom",-55).animate({
+    $("#way-slider").slider( "value", 900 );
+    $(".way-slider-wrapper").css("background-position","0 -34px");
+    $("#way-tooltip-4").show().css("opacity",0).css("margin-bottom",-55).animate({
       marginBottom: 0,
       opacity:1
     },300);
+    $(".way-slider-pic").css("background-position","0 -882px");
   })
 
   var curDate = new Date();

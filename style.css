@@ -1478,62 +1478,88 @@ dl:after,
 
 .way-block-content {
   position: relative;
-  padding: 40px 0;
-  height: 391px;
+  padding: 0;
+  margin:-19px 0 0 0;
 }
 
 .way-block h2 {
   font-size:40px;
-  line-height:40px;
+  line-height:36px;
   color:#1b1b1b;
   text-align:center;
+  position:relative;
+  z-index:2;
+}
+
+.way-slider-pic {
+  width:918px;
+  height:294px;
+  margin:0 0 7px 40px;
+  background-image:url(images/way-pic.png);
+  background-repeat:no-repeat;
+  background-position:0 0;
+}
+
+.way-pic-1 {
+  background-position:0 0;
+}
+
+.way-pic-2 {
+  background-position:0 -294px;
+}
+
+.way-pic-3 {
+  background-position:0 -588px;
+}
+
+.way-pic-4 {
+  background-position:0 -882px;
 }
 
 .way-block .ico-novice {
-  width:100px;
-  height:99px;
+  width:50px;
+  height:34px;
   position:absolute;
-  left:-22px;
-  top:120px;
-  background:url(images/ico-novice.png) 0 0 no-repeat;
+  left:0px;
+  top:0;
   cursor:pointer;
 }
 
 .way-block .ico-guru {
-  width:100px;
-  height:99px;
+  width:53px;
+  height:34px;
   position:absolute;
-  right:-22px;
-  top:120px;
-  background:url(images/ico-guru.png) 0 0 no-repeat;
+  right:0;
+  top:0;
   cursor:pointer;
 }
 
-.way-slider-wrapper {
-  padding:0 0 40px 182px;
+.way-slider-cont {
   width:1003px;
-  margin:163px 0 0 -1px;
+  position:relative;
+  margin:0 0 0 -1px;
+}
+
+.way-slider-wrapper {
+  padding:0 0 0 50px;
+  width:1003px;
+  height:34px;
   background:url(images/way-slider-wrapper-bg.png) 0 0 no-repeat;
 }
 
 #way-slider {
-  width:820px;
-  height:33px;
-  background:url(images/way-slider-bg.png) 0 0 no-repeat;
+  width:900px;
+  height:34px;
 }
 
 #way-slider .ui-slider-handle {
-  width:80px;
-  height:79px;
-  margin-top:-15px;
-  margin-left:-40px;
+  width:66px;
+  height:66px;
+  margin-top: -15px;
+  margin-left: -31px;
   background:url(images/way-slider-handle.png) 0 0 no-repeat;
   outline:none;
   cursor:pointer;
-}
-
-#way-slider .ui-slider-handle:hover {
-  background-position:0 -79px;
 }
 
 #way-slider .ui-slider-range {
@@ -1595,20 +1621,58 @@ dl:after,
   color:#fff;
 }
 
+.tooltip-anchor {
+  width:20px;
+  height:20px;
+  position:absolute;
+  cursor:pointer;
+  z-index:2;
+}
+
+.tooltip-anchor-1 {
+  left: 40px;
+  top: 254px;
+}
+
+.tooltip-anchor-2 {
+  left: 339px;
+  top: 227px;
+}
+
+.tooltip-anchor-3 {
+  left: 641px;
+  top: 154px;
+}
+
+.tooltip-anchor-4 {
+  left: 938px;
+  top: 0;
+}
+
 .way-tooltips {
-  position:relative;
-  height:40px;
+  position:absolute;
+  top:0;
+  width:100%;
+  height:330px;
 }
 
 .way-block .tooltip-popup {
-  width:350px;
-  bottom:-82px;
+  width:270px;
+  margin-left:-40px;
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+  box-shadow:none;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
 }
 
 .way-block .tooltip-cont {
-  font-size:18px;
-  line-height:22px;
-  padding:3px 30px 35px 30px;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 3px 24px 18px 24px;
+  top: 11px;
+  background-position: 38px bottom;
 }
 
 .way-block .tooltip-popup-b {
@@ -1623,7 +1687,7 @@ dl:after,
 
 #way-tooltip-1 {
   left:6px;
-  background:#b6eaa2;
+  background:#bef0aa;
 }
 
 #way-tooltip-1 .tooltip-cont {
@@ -1632,7 +1696,7 @@ dl:after,
 
 #way-tooltip-2 {
   left:168px;
-  background:#a4e6d7;
+  background:#a6e8d9;
 }
 
 #way-tooltip-2 .tooltip-cont {
@@ -1641,7 +1705,7 @@ dl:after,
 
 #way-tooltip-3 {
   left:332px;
-  background:#a6e3f3;
+  background:#ace8f8;
 }
 
 #way-tooltip-3 .tooltip-cont {
@@ -1650,11 +1714,14 @@ dl:after,
 
 #way-tooltip-4 {
   left:497px;
-  background:#8ccfe0;
+  background:#ffeba8;
+  margin-left:-207px;
+  background-position:207px bottom;
 }
 
 #way-tooltip-4 .tooltip-cont {
   background-image: url(images/way-tooltip-4-pt.png) !important;
+  background-position:204px bottom;
 }
 
 #way-tooltip-5 {
@@ -1681,6 +1748,74 @@ dl:after,
 
 .way-tooltip-6-b .tooltip-cont {
   background-position:267px top !important;
+}
+
+.tooltip-name {
+  position:absolute;
+  font-weight:600;
+  font-size:16px;
+  color:#1b1b1b;
+  z-index:3;
+}
+
+.tooltip-name span {
+  cursor:pointer;
+  background-position:0 19px;
+  background-repeat:repeat-x;
+}
+
+.tooltip-name-1 span {
+  background-image:url(images/tt-1-ul.png);
+}
+
+.tooltip-name-2 span {
+  background-image:url(images/tt-2-ul.png);
+}
+
+.tooltip-name-3 span {
+  background-image:url(images/tt-3-ul.png);
+}
+
+.tooltip-name-4 span {
+  background-image:url(images/tt-4-ul.png);
+}
+
+.tooltip-name-1 {
+  left: 19px;
+  bottom: 98px;
+}
+
+.tooltip-name-2 {
+  bottom: 125px;
+  left: 296px;
+}
+
+.tooltip-name-3 {
+  bottom: 198px;
+  left: 628px;
+}
+
+.tooltip-name-4 {
+  bottom: 351px;
+  left: 886px;
+}
+
+.slider-legend {
+  width:903px;
+  margin:9px 0 0 48px;
+}
+
+.slider-legend .legend-item {
+  width:301px;
+  float:left;
+  padding:28px 0 40px 0;
+  text-align:center;
+  color:#8d8d8d;
+  font-size:11px;
+  line-height:16px;
+  letter-spacing:.1em;
+  background:url(images/legend-item-bg.png) center 0 no-repeat;
+  text-transform:uppercase;
 }
 
 .move-slider-hint {
