@@ -1657,7 +1657,7 @@ dl:after,
 }
 
 .way-block .tooltip-popup {
-  width:270px;
+  width:350px;
   margin-left:-40px;
   -webkit-box-shadow:none;
   -moz-box-shadow:none;
@@ -1715,13 +1715,12 @@ dl:after,
 #way-tooltip-4 {
   left:497px;
   background:#ffeba8;
-  margin-left:-207px;
-  background-position:207px bottom;
+  margin-left:-287px;
 }
 
 #way-tooltip-4 .tooltip-cont {
   background-image: url(images/way-tooltip-4-pt.png) !important;
-  background-position:204px bottom;
+  background-position:284px bottom;
 }
 
 #way-tooltip-5 {
