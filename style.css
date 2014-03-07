@@ -623,27 +623,27 @@ dl:after,
 }
 
 .main-slider .slide-1 {
-  background:#61b2cb url(images/slide-1-bg.png) center bottom no-repeat;
+  background:#61b2cb url(images/slide-1-bg.jpg) center bottom no-repeat;
 }
 
 .main-slider .slide-2 {
-  background:#5dc8b1 url(images/slide-2-bg.png) center bottom no-repeat;
+  background:#5dc8b1 url(images/slide-2-bg.jpg) center bottom no-repeat;
 }
 
 .main-slider .slide-3 {
-  background:#e1765f url(images/slide-3-bg.png) center bottom no-repeat;
+  background:#e1765f url(images/slide-3-bg.jpg) center bottom no-repeat;
 }
 
 .main-slider .slide-4 {
-  background:#61b2cb url(images/slide-1-bg.png) center bottom no-repeat;
+  background:#61b2cb url(images/slide-1-bg.jpg) center bottom no-repeat;
 }
 
 .main-slider .slide-5 {
-  background:#5dc8b1 url(images/slide-2-bg.png) center bottom no-repeat;
+  background:#5dc8b1 url(images/slide-2-bg.jpg) center bottom no-repeat;
 }
 
 .main-slider .slide-video {
-  background:#60b1ca url(images/video-slide-bg.png) center -7px no-repeat;
+  background:#60b1ca url(images/video-slide-bg.jpg) center -7px no-repeat;
 }
 
 .main-slider .video-wrapper {
@@ -1211,7 +1211,7 @@ dl:after,
 }
 
 .program-block {
-  background:#73b3c7 url(images/program-block-bg.png) center top no-repeat;
+  background:#73b3c7 url(images/program-block-bg.jpg) center top no-repeat;
   background-size:cover;
   padding:35px 0 73px 0;
 }
@@ -1867,7 +1867,7 @@ dl:after,
 .how-block-top {
   height:590px;
   padding:42px 0 0 0;
-  background:url(images/how-bg.png) center top no-repeat;
+  background:url(images/how-bg.jpg) center top no-repeat;
   background-size:cover;
 }
 
@@ -2021,7 +2021,7 @@ dl:after,
 }
 
 .how-notebook .v-cont-initial {
-  background:url(images/notebook-video-screen.png) 0 0 no-repeat;
+  background:url(images/notebook-video-screen.jpg) 0 0 no-repeat;
 }
 
 .how-notebook .pause {
@@ -2599,43 +2599,6 @@ dl:after,
 .reviews-author .post {
   color:#919da0;
   font-size:11px;
-}
-
-.video-2 {
-  width:526px;
-  height:319px;
-  position:relative;
-  left:109px;
-  top:22px;
-}
-
-.video-2 .v-cont {
-  width:526px;
-  height:319px;
-}
-
-.video-2 .v-cont-initial {
-  background:url(images/video-screen-2.png) 0 0 no-repeat;
-}
-
-.video-2 .controlDiv {
-  width:94px;
-  height:95px;
-  position:absolute;
-  z-index:10;
-  left:50%;
-  top:50%;
-  margin:-47px 0 0 -47px;
-  background:url(images/play-button-2.png) 0 0 no-repeat;
-  cursor:pointer;
-}
-
-.notebook-2 {
-  width:753px;
-  height:401px;
-  background:url(images/notebook-2.png) 0 0 no-repeat;
-  position:relative;
-  margin:0 0 0 -91px ;
 }
 
 .video-block-l {
