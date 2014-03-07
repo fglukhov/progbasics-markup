@@ -223,45 +223,45 @@ $(document).ready(function () {
   $(".way-block .tooltip-name-1, .way-block .tooltip-anchor-1").click(function() {
     $(".way-tooltip-popup").fadeOut(150);
     $("#way-slider").slider( "value", 0 );
-    $(".way-slider-wrapper").css("background-position","0 0");
     $("#way-tooltip-1").show().css("opacity",0).css("margin-bottom",-55).animate({
       marginBottom: 0,
       opacity:1
     },300);
-    $(".way-slider-pic").css("background-position","0 0");
+    $(".way-slider-wrapper").css("background-position","0 0");
+        $(".way-slider-pic").css("background-position","0 0");
   })
   
   $(".way-block .tooltip-name-2, .way-block .tooltip-anchor-2").click(function() {
     $(".way-tooltip-popup").fadeOut(150);
     $("#way-slider").slider( "value", 300 );
-    $(".way-slider-wrapper").css("background-position","0 0");
     $("#way-tooltip-2").show().css("opacity",0).css("margin-bottom",-55).animate({
       marginBottom: 0,
       opacity:1
     },300);
-    $(".way-slider-pic").css("background-position","0 0");
+    $(".way-slider-wrapper").css("background-position","0 0");
+    $(".way-slider-pic").css("background-position","0 -294px");
   })
   
   $(".way-block .tooltip-name-3, .way-block .tooltip-anchor-3").click(function() {
     $(".way-tooltip-popup").fadeOut(150);
     $("#way-slider").slider( "value", 600 );
-    $(".way-slider-wrapper").css("background-position","0 0");
     $("#way-tooltip-3").show().css("opacity",0).css("margin-bottom",-55).animate({
       marginBottom: 0,
       opacity:1
     },300);
-    $(".way-slider-pic").css("background-position","0 0");
+    $(".way-slider-wrapper").css("background-position","0 0");
+    $(".way-slider-pic").css("background-position","0 -588px");
   })
   
   $(".way-block .tooltip-name-4, .way-block .tooltip-anchor-4").click(function() {
     $(".way-tooltip-popup").fadeOut(150);
     $("#way-slider").slider( "value", 900 );
-    $(".way-slider-wrapper").css("background-position","0 0");
     $("#way-tooltip-4").show().css("opacity",0).css("margin-bottom",-55).animate({
       marginBottom: 0,
       opacity:1
     },300);
-    $(".way-slider-pic").css("background-position","0 0");
+    $(".way-slider-wrapper").css("background-position","0 -34px");
+    $(".way-slider-pic").css("background-position","0 -882px");
   })
   
   $(".way-block .ico-novice").click(function() {
